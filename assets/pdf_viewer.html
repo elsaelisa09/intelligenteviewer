@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .pdf-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background: #525659;
+        }
+        
+        .pdf-canvas-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100%;
+            padding: 20px;
+        }
+        
+        .page-container {
+            position: relative;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            background: white;
+        }
+        
+        .pdf-canvas {
+            display: block;
+        }
+        
+        .highlight {
+            position: absolute;
+            background: rgba(255, 255, 0, 0.3);
+            pointer-events: none;
+        }
+        
+        .toolbar {
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background: white;
+            border-bottom: 1px solid #ddd;
+            z-index: 1000;
+        }
+        
+        .toolbar button {
+            padding: 5px 10px;
+            margin: 0 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: white;
+            cursor: pointer;
+        }
+        
+        .toolbar button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        .loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="pdf-container">
+        <div class="toolbar">
+            <div class="navigation">
+                <button id="prev" disabled>Previous</button>
+                <span id="page-info">Page 1 of 1</span>
+                <button id="next" disabled>Next</button>
+            </div>
+            <div class="zoom">
+                <button id="zoom-out">-</button>
+                <span id="zoom-level">100%</span>
+                <button id="zoom-in">+</button>
+            </div>
+        </div>
+        <div class="pdf-canvas-container">
+            <div class="loading">Loading PDF...</div>
+        </div>
+    </div>
+
+    <script>
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+        
+        let pdfDoc = null;
+        let pageNum = 1;
+        let scale = 1.5;
+        const container = document.querySelector('.pdf-canvas-container');
+        const pageInfo = document.getElementById('page-info');
+        const prevButton = document.getElementById('prev');
+        const nextButton = document.getElementById('next');
+        const zoomInButton = document.getElementById('zoom-in');
+        const zoomOutButton = document.getElementById('zoom-out');
+        const zoomLevel = document.getElementById('zoom-level');
+        
+        function renderPage(num) {
+            pdfDoc.getPage(num).then(function(page) {
+                const viewport = page.getViewport({ scale: scale });
+                
+                // Create or get page container
+                let pageContainer = document.getElementById(`page-${num}`);
+                if (!pageContainer) {
+                    pageContainer = document.createElement('div');
+                    pageContainer.id = `page-${num}`;
+                    pageContainer.className = 'page-container';
+                    container.appendChild(pageContainer);
+                }
+                
+                // Create or get canvas
+                let canvas = pageContainer.querySelector('canvas');
+                if (!canvas) {
+                    canvas = document.createElement('canvas');
+                    canvas.className = 'pdf-canvas';
+                    pageContainer.appendChild(canvas);
+                }
+                
+                const context = canvas.getContext('2d');
+                canvas.height = viewport.height;
+                canvas.width = viewport.width;
+                pageContainer.style.width = `${viewport.width}px`;
+                pageContainer.style.height = `${viewport.height}px`;
+                
+                const renderContext = {
+                    canvasContext: context,
+                    viewport: viewport
+                };
+                
+                page.render(renderContext);
+            });
+        }
+        
+        function renderAllPages() {
+            container.innerHTML = '';
+            const loading = document.createElement('div');
+            loading.className = 'loading';
+            loading.textContent = 'Loading PDF...';
+            container.appendChild(loading);
+            
+            const renderPromises = [];
+            for (let i = 1; i <= pdfDoc.numPages; i++) {
+                renderPromises.push(renderPage(i));
+            }
+            
+            Promise.all(renderPromises).then(() => {
+                container.removeChild(loading);
+            });
+        }
+        
+        function updateUI() {
+            pageInfo.textContent = `Page ${pageNum} of ${pdfDoc.numPages}`;
+            prevButton.disabled = pageNum <= 1;
+            nextButton.disabled = pageNum >= pdfDoc.numPages;
+            zoomLevel.textContent = `${Math.round(scale * 100)}%`;
+        }
+        
+        window.loadPDF = function(base64Data) {
+            const binary = atob(base64Data.split(',')[1]);
+            const array = new Uint8Array(binary.length);
+            for (let i = 0; i < binary.length; i++) {
+                array[i] = binary.charCodeAt(i);
+            }
+            
+            pdfjsLib.getDocument(array).promise.then(function(pdf) {
+                pdfDoc = pdf;
+                renderAllPages();
+                updateUI();
+            });
+        };
+        
+        window.addHighlights = function(highlights) {
+            // Clear existing highlights
+            document.querySelectorAll('.highlight').forEach(h => h.remove());
+            
+            highlights.forEach(highlight => {
+                const pageContainer = document.getElementById(`page-${highlight.page + 1}`);
+                if (pageContainer) {
+                    const div = document.createElement('div');
+                    div.className = 'highlight';
+                    div.style.left = `${highlight.coords.x1}px`;
+                    div.style.top = `${highlight.coords.y1}px`;
+                    div.style.width = `${highlight.coords.x2 - highlight.coords.x1}px`;
+                    div.style.height = `${highlight.coords.y2 - highlight.coords.y1}px`;
+                    pageContainer.appendChild(div);
+                    
+                    // Scroll to first highlight
+                    if (highlights.indexOf(highlight) === 0) {
+                        pageContainer.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }
+                }
+            });
+        };
+        
+        prevButton.onclick = () => {
+            if (pageNum > 1) {
+                pageNum--;
+                updateUI();
+            }
+        };
+        
+        nextButton.onclick = () => {
+            if (pageNum < pdfDoc.numPages) {
+                pageNum++;
+                updateUI();
+            }
+        };
+        
+        zoomInButton.onclick = () => {
+            scale = Math.min(scale + 0.2, 3);
+            renderAllPages();
+            updateUI();
+        };
+        
+        zoomOutButton.onclick = () => {
+            scale = Math.max(scale - 0.2, 0.5);
+            renderAllPages();
+            updateUI();
+        };
+    </script>
+</body>
+</html>

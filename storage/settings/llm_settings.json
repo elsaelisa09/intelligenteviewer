@@ -1,0 +1,31 @@
+{
+    "provider": "azure-gpt",
+    "azure": {
+        "api_key": "f2efca177cb44374b963eae7b612b5e0",
+        "endpoint": "https://iedcchat.openai.azure.com",
+        "deployment_name": "gpt-35-turbo",
+        "api_version": "2024-08-01-preview"
+    },
+    "claude": {
+        "api_key": "",
+        "model": "claude-3-opus-20240229",
+        "api_version": "2024-02-15"
+    },
+    "gemini": {
+        "api_key": "AIasdfasdf940023400234023023402034k",
+        "project_id": "600850234508",
+        "model": "gemini-2.0-flash",
+        "api_version": "v1alpha"
+    },
+    "llama": {
+        "api_key": "testst",
+        "endpoint": "",
+        "model": "",
+        "api_version": ""
+    },
+    "retrieval": {
+        "chunks_per_doc": 2,
+        "max_total_chunks": 10,
+        "similarity_threshold": 0.1
+    }
+}

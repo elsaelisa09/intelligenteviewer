@@ -1,0 +1,54 @@
+/* Add to your assets/custom.css file */
+
+/* Upload Area Styling */
+.upload-content {
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+    background-color: #f8f9fa;
+}
+
+.upload-content:hover {
+    border-color: #6b5b95;
+    background-color: #f5f5f5;
+}
+
+/* Loading Animation Enhancement */
+.upload-spinner-container {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Progress Bar Styling */
+.progress {
+    height: 12px;
+    border-radius: 6px;
+}
+
+.progress-bar {
+    background-color: #6b5b95;
+}
+
+/* Status Message Animation */
+@keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+}
+
+.processing-status {
+    animation: pulse 2s infinite ease-in-out;
+    font-weight: 500;
+}
+
+/* Success Animation */
+.upload-success {
+    color: #28a745;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

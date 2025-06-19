@@ -1,0 +1,41 @@
+{
+    "default": "gemini",
+    "groups": {
+        "hsse": "azure-gpt",
+        "asset": "gemini",
+        "public": "gemini",
+        "mahasiswakp": "azure-gpt"
+    },
+    "retrieval_params": {
+        "default": {
+            "chunks_per_doc": 3,
+            "max_total_chunks": 10,
+            "similarity_threshold": 0.75,
+            "default_language": "en"
+        },
+        "hsse": {
+            "chunks_per_doc": 5,
+            "max_total_chunks": 10,
+            "similarity_threshold": 0.4,
+            "default_language": "id"
+        },
+        "asset": {
+            "chunks_per_doc": 3,
+            "max_total_chunks": 10,
+            "similarity_threshold": 0.3,
+            "default_language": "en"
+        },
+        "public": {
+            "chunks_per_doc": 3,
+            "max_total_chunks": 20,
+            "similarity_threshold": 0.2,
+            "default_language": "id"
+        },
+        "mahasiswakp": {
+            "chunks_per_doc": 3,
+            "max_total_chunks": 10,
+            "similarity_threshold": 0.3,
+            "default_language": "en"
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.custom-tabs .nav-item .nav-link {
+    font-weight: bold;
+    color: #2d283e; /* Use COLORS["text"] value */
+    background-color: #f8f7fc; /* Use COLORS["background"] value */
+    border: 1px solid #c6c6de; /* Use COLORS["secondary"] value */
+    border-bottom: none;
+    margin-right: 4px;
+    border-radius: 5px 5px 0 0;
+    padding: 10px 15px;
+}
+
+/* Style for active tab */
+.custom-tabs .nav-item .nav-link.active {
+    color: #6b5b95 !important; /* Use COLORS["primary"] value */
+    background-color: white !important;
+    border-bottom: 1px solid white !important;
+    z-index: 1;
+    font-weight: bold !important;
+}
+
+/* Style for tab hover effect */
+.custom-tabs .nav-item .nav-link:hover:not(.active) {
+    background-color: #e6e4ed; /* Use your COLORS["light_accent"] value */
+    border-color: #8677aa; /* Use your COLORS["accent"] value */
+}
+
+/* Ensure tab content has correct styling */
+.tab-content {
+    padding: 15px 0;
+    background-color: white;
+}
+
+/* Fix for dropdown styling in tables */
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner .Select-menu-outer {
+    display: block !important;
+    visibility: visible !important;
+}
+
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner .Select-control {
+    border: 1px solid #ddd !important;
+}
+
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner .Select.is-focused:not(.is-open) > .Select-control {
+    border-color: #6b5b95 !important;
+    box-shadow: 0 0 0 1px #6b5b95 !important;
+}

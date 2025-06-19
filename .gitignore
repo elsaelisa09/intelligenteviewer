@@ -1,0 +1,25 @@
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment folder
+venv/
+
+# VS Code settings
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Database or log files
+*.db
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Flask/Dash instance folders
+instance/

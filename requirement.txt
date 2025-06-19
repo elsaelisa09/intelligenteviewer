@@ -1,0 +1,39 @@
+anthropic==0.49.0
+bcrypt==4.2.1
+camelot-py==1.0.0
+dash==2.18.2
+dash-bootstrap-components==1.6.0
+dash-mantine-components==0.15.2
+deep-translator==1.11.4
+docx2txt==0.8
+faiss-cpu==1.9.0.post1
+flask==3.0.3
+flask-session==0.8.0
+flask-sqlalchemy==3.1.1
+langchain==0.3.14
+langchain-community==0.3.14
+langchain-core==0.3.29
+langchain-huggingface==0.1.2
+langid==1.1.6
+numpy==1.26.4
+openai==0.28.0
+pandas==2.2.3
+pillow==10.4.0
+pyjwt==2.10.1
+pymupdf==1.25.2
+pypdf==3.17.4  # <<== diperbaiki
+pypdf2==3.0.1
+requests==2.32.3
+sentence-transformers==3.3.1
+spacy==3.8.4
+sqlalchemy==2.0.37
+google-ai-generativelanguage==0.6.15
+google-api-core==2.24.2
+google-api-python-client==2.165.0
+google-auth==2.38.0
+google-auth-httplib2==0.2.0
+google-genai==1.8.0
+google-generativeai==0.8.4
+
+# Setelah install, jalankan:
+# python -m spacy download en_core_web_sm==3.8.0

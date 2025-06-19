@@ -1,0 +1,1770 @@
+{
+    "docstore": [
+        {
+            "doc_id": "chunk_0",
+            "page_content": "ANALISIS PERANCANGAN PENJADWALAN  PETUGAS IBADAH GEREJA HKBP PARANGINAN \nMENGGUNAKAN HYBRID PSO-GENETIC  ALGORITHM DENGAN PENDEKATAN WATERFALL",
+            "metadata": {
+                "chunk_id": "chunk_0",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_1",
+            "page_content": "Oleh: \nELSA ELISA YOHANA SIANTURI \n122140135 \n",
+            "metadata": {
+                "chunk_id": "chunk_1",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_2",
+            "page_content": "ii   \n",
+            "metadata": {
+                "chunk_id": "chunk_2",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_3",
+            "page_content": "DAFTAR ISI .......................................................................................................... ii  \nDAFTAR TABEL ................................................................................................. v  \nDAFTAR RUMUS ............................................................................................... vi  \nDAFTAR LAMPIRAN ........................................................................................",
+            "metadata": {
+                "chunk_id": "chunk_3",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_4",
+            "page_content": "v  \nDAFTAR RUMUS ............................................................................................... vi  \nDAFTAR LAMPIRAN ........................................................................................ vii  \nBAB I PENDAHULUAN ......................................................................................",
+            "metadata": {
+                "chunk_id": "chunk_4",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_5",
+            "page_content": "1 1.1 Latar Belakang Masalah .............................................................................. 1 1.2 Identifikasi Masalah ..................................................................................... 3 1.3 Rumusan Masalah ........................................................................................ 3 1.4 Tujuan Penelitian ......................................................................................... 3 1.5 Batasan Masalah",
+            "metadata": {
+                "chunk_id": "chunk_5",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_6",
+            "page_content": ".......................................................................................... 4 1.7 Korelasi RP \u2013 RQ dan RO ........................................................................... 4 1.8 Manfaat Penelitian ....................................................................................... 5 1.9 Sistematika Penulisan .................................................................................. 6 1.9.1",
+            "metadata": {
+                "chunk_id": "chunk_6",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_7",
+            "page_content": "6 1.9.2 Bab II Tinjauan Pustaka ........................................................................ 6 1.9.3 Bab III Metode Penelitian ..................................................................... 6 1.9.5 Bab IV Hasil dan Pembahasan .............................................................. 7 1.9.6 Bab V Kesimpulan dan Saran ............................................................... 7 BAB II TINJAUAN PUSTAKA",
+            "metadata": {
+                "chunk_id": "chunk_7",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_8",
+            "page_content": "........................................................................... 8 2.1 Tinjauan Pustaka .......................................................................................... 8 2.2 Dasar Teori ................................................................................................ 11 2.2.1 Penjadwalan ........................................................................................ 12 iii 2.2.2 Particle Swarm Optimization Algorithm",
+            "metadata": {
+                "chunk_id": "chunk_8",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_9",
+            "page_content": "............................................",
+            "metadata": {
+                "chunk_id": "chunk_9",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_10",
+            "page_content": "13  \n2.2.2  Genetic Algorithm  ...............................................................................",
+            "metadata": {
+                "chunk_id": "chunk_10",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_11",
+            "page_content": "14 BAB III METODE PENELITIAN ...................................................................... 17 3.1 Desain Penelitian ....................................................................................... 17 3.2 Penjabaran Langkah Penelitian .................................................................. 17 3.2.1 Identifikasi Masalah ............................................................................ 17 3.2.2 Pengumpulan Data",
+            "metadata": {
+                "chunk_id": "chunk_11",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_12",
+            "page_content": ".............................................................................. 19 3.2.3 Perancangan Algoritma ....................................................................... 21 3.2.4 Simulasi dan Pengujian Algoritma ..................................................... 29 3.2.5 Metode Pengujian ............................................................................... 31 DAFTAR PUSTAKA ..........................................................................................",
+            "metadata": {
+                "chunk_id": "chunk_12",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_13",
+            "page_content": "32  \nLAMPIRAN ......................................................................................................... 34  \n \niv",
+            "metadata": {
+                "chunk_id": "chunk_13",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_14",
+            "page_content": "Tabel 1.1  Korelasi RP \u2013 RQ dan RO .................................................................  4 \nTabel 2.1 Review Literatur\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026...  10 \nTabel 3.2  Data Set Ketersediaan Pelayan Gereja\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026... 19 \nTabel 3.2  Data Set Operator\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026.. 20 \nTabel 3.3 Tabel Data Keluhan Hasil Wawancara\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026  21 \nv",
+            "metadata": {
+                "chunk_id": "chunk_14",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_15",
+            "page_content": "17 \nGambar 3.2  Diagram Rancangan Algoritma\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026.. 24 \nGambar 3.3  Inisialisasi Populasi\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026 25 \nGambar 3.4  Generate Random Valid Schedules\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026. 26 \nGambar 3.5  Initialize Personal Best & Global Best\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026.. 27 \nGambar 3.6  Enter Main Loop\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026. 28 \nGambar 3.7  Return Best Schedule\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026..  29 \nGambar 3.8  Tampilan Output Kode Program\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026.",
+            "metadata": {
+                "chunk_id": "chunk_15",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_16",
+            "page_content": "Rumus 2.1 Kecepatan Partikel\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026.. 13 \nRumus 2.2 Posisi Partikel\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026. 14 \nRumus 2.3 Nilai  Fitness\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026..  15 \n \n \n \nvii",
+            "metadata": {
+                "chunk_id": "chunk_16",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_17",
+            "page_content": " \nLampiran 1  Kode Program\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026...  34 \n1   \n",
+            "metadata": {
+                "chunk_id": "chunk_17",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_18",
+            "page_content": "1.1 Latar Belakang Masalah \nDi era digital saat ini, pengelolaan organisasi keagamaan menghadapi tantangan yang \nsemakin kompleks dalam hal administrasi dan manajemen. Gereja sebagai institusi \nkeagamaan tidak hanya berfokus pada pelayanan spiritual, tetapi juga perlu mengelola \nberbagai aspek operasional secara efisien untuk mendukung kegiatan peribadatan. Perubahan zaman telah mendorong manusia untuk selalu berkembang, tidak terkecuali \nteknologi.",
+            "metadata": {
+                "chunk_id": "chunk_18",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_19",
+            "page_content": "Perubahan zaman telah mendorong manusia untuk selalu berkembang, tidak terkecuali \nteknologi. Seiring dengan berkembangnya teknologi, teknologi komputer menjadi \nsuatu hal yang sangat lumrah dewasa ini. Komputer merupakan bukti dari \nperkembangan teknologi ini. Hampir setiap bidang kehidupan telah menggunakan \nkomputer sebagai alat bantu kerja, mulai dari bidang pendidikan, pemerintahan, serta \ndunia bisnis dan maupun dalam organisasi.",
+            "metadata": {
+                "chunk_id": "chunk_19",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_20",
+            "page_content": "Hampir setiap bidang kehidupan telah menggunakan \nkomputer sebagai alat bantu kerja, mulai dari bidang pendidikan, pemerintahan, serta \ndunia bisnis dan maupun dalam organisasi. Penggunaan teknologi informasi telah \nmenjadi kebutuhan mendasar dalam mendukung pengelolaan organisasi keagamaan \nmodern, mulai dari sistem administrasi jemaat, pengelolaan keuangan, hingga \npenjadwalan kegiatan dan petugas ibadah. Diperlukannya suatu strategi untuk bisa \nterus maju dan berkembang[1]. Salah satu tantangan utama dalam pengelolaan gereja adalah penjadwalan petugas \nibadah yang melibatkan banyak variabel dan konstrain.",
+            "metadata": {
+                "chunk_id": "chunk_20",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_21",
+            "page_content": "Di HKBP Paranginan, penjadwalan petugas ibadah masih dilakukan secara manual, yang sering kali mengakibatkan beberapa permasalahan seperti: \u2022 Distribusi tugas yang tidak merata antar petugas \u2022 Konflik jadwal antara petugas yang memiliki multiple roles \u2022 Kesulitan dalam melakukan perubahan jadwal secara cepat ketika ada petugas yang berhalangan \u2022 Waktu yang cukup lama dalam menyusun jadwal karena harus mempertimbangkan berbagai kendala \u2022 Kesulitan dalam memenuhi preferensi waktu dari",
+            "metadata": {
+                "chunk_id": "chunk_21",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_22",
+            "page_content": "masing-masing petugas ibadah 2 Optimasi penjadwalan menjadi krusial mengingat setiap minggu ada beberapa jenis pelayanan yang membutuhkan petugas berbeda, seperti worship leader , pembaca warta, pemusik, pembawa doa dan petugas multimedia .",
+            "metadata": {
+                "chunk_id": "chunk_22",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_23",
+            "page_content": "Setiap petugas memiliki \nkemampuan dan ketersediaan waktu yang berbeda-beda. Selain itu, jadwal ibadah \nyang dilakukan di HKBP Paranginan sebanyak 2 sesi ibadah untuk setiap hari \nMinggunya menambah konstrain ynag herus terpenuhi dalam pembuatan jadwal \npetugas ibadah. Kompleksitas ini membutuhkan pendekatan komputasional yang \ndapat menghasilkan jadwal optimal dengan mempertimbangkan berbagai konstrain \nyang ada.",
+            "metadata": {
+                "chunk_id": "chunk_23",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_24",
+            "page_content": "Kompleksitas ini membutuhkan pendekatan komputasional yang \ndapat menghasilkan jadwal optimal dengan mempertimbangkan berbagai konstrain \nyang ada. Permasalahan penjadwalan di HKBP Paranginan semakin kompleks dengan adanya \nberbagai aturan liturgi dan tradisi gereja yang harus dipatuhi. Selain itu, rotasi petugas \nharus mempertimbangkan aspek keadilan dan pengembangan talenta jemaat, di mana \nsetiap anggota jemaat yang memiliki kemampuan harus diberi kesempatan untuk \nmelayani. Penggunaan algoritma  hybrid   PSO-Genetic Algorithm  dipilih karena kemampuannya \ndalam menangani masalah optimasi kompleks dengan  multiple constraints .",
+            "metadata": {
+                "chunk_id": "chunk_24",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_25",
+            "page_content": "Penggunaan algoritma  hybrid   PSO-Genetic Algorithm  dipilih karena kemampuannya \ndalam menangani masalah optimasi kompleks dengan  multiple constraints . Particle \nSwarm Optimization (PSO)  memiliki kemampuan eksplorasi yang baik dalam mencari \nsolusi global[2], sementara  Genetic Algorithm (GA)  unggul dalam eksploitasi solusi \nlokal[3]. Kombinasi kedua algoritma ini diharapkan dapat menghasilkan solusi \npenjadwalan yang lebih optimal dibandingkan penggunaan algoritma tunggal.",
+            "metadata": {
+                "chunk_id": "chunk_25",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_26",
+            "page_content": "Kombinasi kedua algoritma ini diharapkan dapat menghasilkan solusi \npenjadwalan yang lebih optimal dibandingkan penggunaan algoritma tunggal. Metode  Waterfall  dipilih dalam perancangan sistem ini karena pendekatan \nbertahapnya yang terstruktur, dimulai dari analisis kebutuhan hingga perancangan \nsistem yang rinci. Dalam konteks perancangan penjadwalan petugas ibadah di HKBP \nParanginan, setiap tahap perancangan dapat didefinisikan dengan jelas untuk \nmemastikan bahwa kebutuhan organisasi dapat diterjemahkan ke dalam desain sistem \nyang sesuai.",
+            "metadata": {
+                "chunk_id": "chunk_26",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_27",
+            "page_content": "Dalam konteks perancangan penjadwalan petugas ibadah di HKBP \nParanginan, setiap tahap perancangan dapat didefinisikan dengan jelas untuk \nmemastikan bahwa kebutuhan organisasi dapat diterjemahkan ke dalam desain sistem \nyang sesuai. Selain itu, metode ini memungkinkan dokumentasi yang lengkap di setiap \nfase, sehingga memudahkan evaluasi dan perbaikan di masa mendatang[4]. Dengan \nmetode Waterfall, kompleksitas permasalahan penjadwalan yang melibatkan banyak \nkonstrain dapat dianalisis dan diuraikan secara sistematis, menghasilkan perancangan \nsolusi yang terorganisir dan sesuai dengan kebutuhan liturgi serta tradisi gereja.",
+            "metadata": {
+                "chunk_id": "chunk_27",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_28",
+            "page_content": "Dengan \nmetode Waterfall, kompleksitas permasalahan penjadwalan yang melibatkan banyak \nkonstrain dapat dianalisis dan diuraikan secara sistematis, menghasilkan perancangan \nsolusi yang terorganisir dan sesuai dengan kebutuhan liturgi serta tradisi gereja. 3   \n   \n1.2 Identifikasi Masalah \nBerdasarkan latar belakang yang telah diuraikan, berikut adalah identifikasi masalah \nyang dihadapi oleh HKBP Paranginan terkait pengelolaan penjadwalan petugas \nibadah: \n1. Keterbatasan Sistem Manual dalam Memenuhi Konstrain Penjadwalan \nPenjadwalan petugas ibadah di HKBP Paranginan dilakukan secara manual, \nyang sering kali tidak mampu memenuhi seluruh konstrain, seperti aturan liturgi, rotasi yang adil, dan distribusi tugas yang merata.",
+            "metadata": {
+                "chunk_id": "chunk_28",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_29",
+            "page_content": "rotasi yang adil, dan distribusi tugas yang merata. 2. Kompleksitas dalam Mengelola Konflik Jadwal \nPetugas yang memiliki  multiple roles  sering menghadapi konflik jadwal. 3. Kesulitan Memenuhi Preferensi dan Kebutuhan Dinamis Gereja \nProses manual tidak fleksibel dalam mengakomodasi preferensi waktu setiap \npetugas maupun kebutuhan yang dinamis, seperti perubahan jadwal atau \npenyesuaian terhadap anggota baru.",
+            "metadata": {
+                "chunk_id": "chunk_29",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_30",
+            "page_content": "3. Kesulitan Memenuhi Preferensi dan Kebutuhan Dinamis Gereja \nProses manual tidak fleksibel dalam mengakomodasi preferensi waktu setiap \npetugas maupun kebutuhan yang dinamis, seperti perubahan jadwal atau \npenyesuaian terhadap anggota baru. Kinerja Sistem Manual yang Tidak Efisien \nWaktu yang dibutuhkan untuk menyusun jadwal secara manual cukup lama, \nsementara hasilnya sering tidak optimal dalam hal efisiensi distribusi tugas dan \nkeadilan antar petugas. Bagaimana merancang penjadwalan petugas ibadah HKBP Paranginan \nmenggunakan  hybrid PSO-Genetic Algorithm  yang dapat memenuhi seluruh \nkonstrain dan kebutuhan gereja?",
+            "metadata": {
+                "chunk_id": "chunk_30",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_31",
+            "page_content": "Bagaimana merancang penjadwalan petugas ibadah HKBP Paranginan \nmenggunakan  hybrid PSO-Genetic Algorithm  yang dapat memenuhi seluruh \nkonstrain dan kebutuhan gereja? Bagaimana perancangan pendekatan  Waterfall  dalam penjadwalan untuk \nmengakomodasi kebutuhan yang dinamis dari HKBP Paranginan? Bagaimana tingkat efektivitas sistem penjadwalan yang dikembangkan dalam \nmengatasi permasalahan distribusi tugas, konflik jadwal, dan preferensi waktu \npetugas dibandingkan dengan sistem manual?",
+            "metadata": {
+                "chunk_id": "chunk_31",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_32",
+            "page_content": "Bagaimana tingkat efektivitas sistem penjadwalan yang dikembangkan dalam \nmengatasi permasalahan distribusi tugas, konflik jadwal, dan preferensi waktu \npetugas dibandingkan dengan sistem manual? Perancangan Algoritma Penjadwalan \na.   Merancang algoritma  hybrid Particle Swarm Optimization  (PSO) dan \nGenetic Algorithm  (GA) untuk sistem penjadwalan petugas ibadah di \nHKBP Paranginan. 4   \n   \nb.   Memastikan algoritma yang dirancang dapat memenuhi  multiple constrait  \nc.   Menghasilkan jadwal yang optimal secara teoritis berdasarkan desain \nalgoritma yang telah dirancang. \n2. Dalam tugas akhir ini, akan dilakukan analisis terhadap efektivitas algoritma \nhybrid PSO-GA yang dirancang.",
+            "metadata": {
+                "chunk_id": "chunk_32",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_33",
+            "page_content": "Dalam tugas akhir ini, akan dilakukan analisis terhadap efektivitas algoritma \nhybrid PSO-GA yang dirancang. Analisis ini mencakup: \na.   Evaluasi performa algoritma menggunakan data simulasi berbasis data \nhistoris dari HKBP Paranginan. Perbandingan hasil penjadwalan yang dihasilkan oleh algoritma dengan \nmetode manual, untuk mengukur tingkat efisiensi, keadilan distribusi tugas, \ndan kemampuan mengatasi konflik jadwal. c.   Kajian terhadap fleksibilitas algoritma dalam menghadapi perubahan \nkebutuhan gereja. Penelitian difokuskan pada penjadwalan petugas untuk 2 sesi ibadah mingguan  \n2.",
+            "metadata": {
+                "chunk_id": "chunk_33",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_34",
+            "page_content": "Penelitian difokuskan pada penjadwalan petugas untuk 2 sesi ibadah mingguan  \n2. Data petugas yang digunakan terbatas pada anggota jemaat HKBP Paranginan \nyang aktif \n3. Optimasi jadwal hanya mempertimbangkan konstrain yang telah didefinisikan. 1.7 Korelasi RP \u2013 RQ dan RO \nTabel 1.1 Korelasi RP \u2013 RQ dan RO \nRP  RQ  RO \nKeterbatasan  sistem \nmanual dalam memenuhi \nkonstrain penjadwalan \nBagaimana  merancang \npenjadwalan  petugas \nibadah HKBP Paranginan \nmenggunakan  hybrid  \nPSO-GA  yang  dapat \nmemenuhi  seluruh \nkonstrain dan kebutuhan \ngereja?",
+            "metadata": {
+                "chunk_id": "chunk_34",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_35",
+            "page_content": "1.7 Korelasi RP \u2013 RQ dan RO \nTabel 1.1 Korelasi RP \u2013 RQ dan RO \nRP  RQ  RO \nKeterbatasan  sistem \nmanual dalam memenuhi \nkonstrain penjadwalan \nBagaimana  merancang \npenjadwalan  petugas \nibadah HKBP Paranginan \nmenggunakan  hybrid  \nPSO-GA  yang  dapat \nmemenuhi  seluruh \nkonstrain dan kebutuhan \ngereja? Merancang  algoritma \nhybrid  PSO-GA  yang \nmemenuhi  multiple \nconstraints  dan \nmenghasilkan  jadwal \nyang optimal. Kompleksitas  dalam \nmengelola konflik jadwal \nBagaimana  tingkat \nefektivitas  algoritma \npenjadwalan  yang \nMenganalisis efektivitas \nalgoritma  hybrid  PSO-GA \ndalam mengatasi konflik \n5   \n   \ndikembangkan  dalam \nmengatasi permasalahan \ndistribusi tugas, konflik \njadwal,  dan  preferensi \nwaktu  petugas \ndibandingkan  dengan \nsistem manual?",
+            "metadata": {
+                "chunk_id": "chunk_35",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_36",
+            "page_content": "Kompleksitas  dalam \nmengelola konflik jadwal \nBagaimana  tingkat \nefektivitas  algoritma \npenjadwalan  yang \nMenganalisis efektivitas \nalgoritma  hybrid  PSO-GA \ndalam mengatasi konflik \n5   \n   \ndikembangkan  dalam \nmengatasi permasalahan \ndistribusi tugas, konflik \njadwal,  dan  preferensi \nwaktu  petugas \ndibandingkan  dengan \nsistem manual? Kesulitan  memenuhi \npreferensi  dan kebutuhan \ndinamis gereja \nBagaimana \nmengimplementasikan \npendekatan  Waterfall  \ndalam perancangan sistem \npenjadwalan  untuk \nmengakomodasi \nkebutuhan yang dinamis \ndari HKBP Paranginan? Mengkaji  fleksibilitas \nalgoritma  dalam \nmenghadapi  perubahan \nkebutuhan  dan \nmemastikan  kebutuhan \ndinamis terpenuhi.",
+            "metadata": {
+                "chunk_id": "chunk_36",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_37",
+            "page_content": "Mengkaji  fleksibilitas \nalgoritma  dalam \nmenghadapi  perubahan \nkebutuhan  dan \nmemastikan  kebutuhan \ndinamis terpenuhi. Kinerja sistem manual \nyang tidak efisien \nBagaimana  tingkat \nefektivitas  sistem \npenjadwalan  yang \ndikembangkan  dalam \nmengatasi permasalahan \ndistribusi tugas, konflik \njadwal,  dan  preferensi \nwaktu  petugas \ndibandingkan  dengan \nsistem manual? Membandingkan efisiensi \ndan keadilan distribusi \ntugas  antara algoritma \nhybrid  PSO-GA  dan \nsistem manual.",
+            "metadata": {
+                "chunk_id": "chunk_37",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_38",
+            "page_content": "Membandingkan efisiensi \ndan keadilan distribusi \ntugas  antara algoritma \nhybrid  PSO-GA  dan \nsistem manual. 1.8 Manfaat Penelitian \nTugas akhir ini diharapkan dapat memberikan kontribusi praktis bagi HKBP \nParanginan dalam meningkatkan efisiensi pengelolaan penjadwalan petugas ibadah. Penerapan sistem yang dikembangkan akan memberikan solusi terhadap berbagai \n6   \n   \npermasalahan yang selama ini dihadapi dalam penjadwalan manual. Berikut adalah \nmanfaat praktis yang dapat diperoleh: \n1.",
+            "metadata": {
+                "chunk_id": "chunk_38",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_39",
+            "page_content": "Berikut adalah \nmanfaat praktis yang dapat diperoleh: \n1. Membantu HKBP Paranginan mengoptimalkan proses penjadwalan petugas \nibadah dengan sistem yang lebih efisien dibandingkan sistem manual, sehingga \nmenghemat waktu dan tenaga dalam penyusunan jadwal. 2.   Meningkatkan keadilan dalam distribusi tugas antar petugas ibadah, sehingga \nsetiap anggota jemaat yang memiliki kemampuan mendapat kesempatan yang \nmerata untuk melayani.",
+            "metadata": {
+                "chunk_id": "chunk_39",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_40",
+            "page_content": "2.   Meningkatkan keadilan dalam distribusi tugas antar petugas ibadah, sehingga \nsetiap anggota jemaat yang memiliki kemampuan mendapat kesempatan yang \nmerata untuk melayani. Mempermudah pengelolaan perubahan jadwal secara dinamis ketika ada \npetugas yang berhalangan hadir, sehingga tidak mengganggu kelancaran \nibadah. Membantu pengurus gereja dalam memenuhi preferensi waktu dari masing-\nmasing petugas ibadah secara lebih optimal, sehingga meningkatkan \nkenyamanan dan partisipasi petugas. Bab I Pendahuluan \nBab ini menjelaskan konteks penelitian, identifikasi masalah, tujuan penelitian, \nbatasan masalah, manfaat penelitian, dan sistematika penulisan.",
+            "metadata": {
+                "chunk_id": "chunk_40",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_41",
+            "page_content": "Bab I Pendahuluan \nBab ini menjelaskan konteks penelitian, identifikasi masalah, tujuan penelitian, \nbatasan masalah, manfaat penelitian, dan sistematika penulisan. Latar belakang \nyang dibahas menguraikan pentingnya perancangan sistem penjadwalan \nberbasis algoritma hybrid PSO-GA untuk mengatasi permasalahan penjadwalan \npetugas ibadah di Gereja HKBP Paranginan. Bab II Tinjauan Pustaka \nBab ini menyajikan tinjauan terhadap penelitian sebelumnya yang relevan \nsebagai dasar teoritis penelitian.",
+            "metadata": {
+                "chunk_id": "chunk_41",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_42",
+            "page_content": "Bab II Tinjauan Pustaka \nBab ini menyajikan tinjauan terhadap penelitian sebelumnya yang relevan \nsebagai dasar teoritis penelitian. Bagian ini mencakup kajian teori tentang \nalgoritma PSO, Genetic Algorithm, kombinasi keduanya dalam  hybrid \noptimization , metodologi Waterfall, dan penelitian serupa lainnya terkait \noptimasi penjadwalan. Bab III Metode Penelitian \nBab ini menguraikan metode yang digunakan dalam penelitian, termasuk alur \npenelitian, langkah-langkah perancangan sistem, alat dan bahan yang digunakan, \nrancangan  algoritma  hybrid  PSO-GA,",
+            "metadata": {
+                "chunk_id": "chunk_42",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_43",
+            "page_content": "Bab III Metode Penelitian \nBab ini menguraikan metode yang digunakan dalam penelitian, termasuk alur \npenelitian, langkah-langkah perancangan sistem, alat dan bahan yang digunakan, \nrancangan  algoritma  hybrid  PSO-GA, pendekatan  Waterfall  dalam \n7   \n   \npengembangan sistem, serta metode pengujian untuk mengevaluasi performa \nsistem penjadwalan. 1.9.5 Bab IV Hasil dan Pembahasan  \nBab ini membahas hasil implementasi algoritma hybrid PSO-GA dan sistem \npenjadwalan yang dirancang. Analisis hasil mencakup evaluasi performa \nalgoritma, perbandingan dengan metode manual, dan diskusi mengenai \nefektivitas pendekatan Waterfall dalam memenuhi kebutuhan dinamis gereja.",
+            "metadata": {
+                "chunk_id": "chunk_43",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_44",
+            "page_content": "Analisis hasil mencakup evaluasi performa \nalgoritma, perbandingan dengan metode manual, dan diskusi mengenai \nefektivitas pendekatan Waterfall dalam memenuhi kebutuhan dinamis gereja. Bab V Kesimpulan dan Saran \nBab ini menyimpulkan hasil penelitian secara keseluruhan, menjawab rumusan \nmasalah, dan memberikan rekomendasi untuk pengembangan lebih lanjut. Saran \nyang diberikan diharapkan dapat membantu optimalisasi implementasi sistem \npenjadwalan di gereja maupun pengembangan algoritma di masa mendatang.",
+            "metadata": {
+                "chunk_id": "chunk_44",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_45",
+            "page_content": "2.1 Tinjauan Pustaka \nPenelitian yang dilakukan oleh Hartono dan Zein pada tahun 2023 berfokus pada \npenerapan algoritma genetika dan jaringan syaraf tiruan dalam penjadwalan mata \nkuliah di Program Studi Sistem Informasi Universitas Pamulang. Masalah utama yang \ndiangkat adalah kompleksitas penjadwalan yang melibatkan pengaturan ruang, waktu, \npreferensi dosen, dan kebutuhan mahasiswa.",
+            "metadata": {
+                "chunk_id": "chunk_45",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_46",
+            "page_content": "Masalah utama yang \ndiangkat adalah kompleksitas penjadwalan yang melibatkan pengaturan ruang, waktu, \npreferensi dosen, dan kebutuhan mahasiswa. Penelitian tersebut menggunakan pendekatan metode  System Development Life Cycle  \n(SDLC) model  waterfall  untuk pengembangan sistem penjadwalan. Algoritma \ngenetika diterapkan untuk menghasilkan solusi awal yang efisien, sementara jaringan \nsyaraf tiruan digunakan untuk mengoptimalkan jadwal berdasarkan berbagai kendala \ndan parameter relevan[5].",
+            "metadata": {
+                "chunk_id": "chunk_46",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_47",
+            "page_content": "Algoritma \ngenetika diterapkan untuk menghasilkan solusi awal yang efisien, sementara jaringan \nsyaraf tiruan digunakan untuk mengoptimalkan jadwal berdasarkan berbagai kendala \ndan parameter relevan[5]. Hasil penelitian menunjukkan peningkatan efisiensi dalam proses penjadwalan, \npengurangan konflik jadwal, serta kemampuan untuk menyesuaikan penjadwalan \ndengan kebutuhan institusi. Namun, penelitian ini belum mengintegrasikan analisis \nberbasis data waktu nyata atau model adaptif yang dapat memperhitungkan perubahan \nmendadak, seperti pembatalan kelas atau perubahan jadwal dosen.",
+            "metadata": {
+                "chunk_id": "chunk_47",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_48",
+            "page_content": "Namun, penelitian ini belum mengintegrasikan analisis \nberbasis data waktu nyata atau model adaptif yang dapat memperhitungkan perubahan \nmendadak, seperti pembatalan kelas atau perubahan jadwal dosen. Penelitian yang dilakukan oleh Muhammad Muhardeny, Muhammad Haviz Irfani, dan \nJuhaini Alie pada tahun 2023 berfokus pada penerapan algoritma  Particle Swarm \nOptimization  (PSO) dalam penjadwalan mata pelajaran di SMPIT Mufidatul Ilmi.",
+            "metadata": {
+                "chunk_id": "chunk_48",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_49",
+            "page_content": "Penelitian yang dilakukan oleh Muhammad Muhardeny, Muhammad Haviz Irfani, dan \nJuhaini Alie pada tahun 2023 berfokus pada penerapan algoritma  Particle Swarm \nOptimization  (PSO) dalam penjadwalan mata pelajaran di SMPIT Mufidatul Ilmi. Masalah utama yang diangkat adalah kompleksitas dalam penyusunan jadwal yang \nmelibatkan banyak faktor, seperti kapasitas ruang kelas, kemampuan guru, waktu yang \nsesuai untuk setiap semester, dan potensi terjadinya konflik antara jadwal mengajar \nguru dan ruang yang tersedia. Penelitian tersebut menggunakan metode pengembangan sistem dengan model \nWaterfall  dalam proses pembuatan aplikasi penjadwalan.",
+            "metadata": {
+                "chunk_id": "chunk_49",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_50",
+            "page_content": "Penelitian tersebut menggunakan metode pengembangan sistem dengan model \nWaterfall  dalam proses pembuatan aplikasi penjadwalan. Algoritma PSO diterapkan \nuntuk menyusun jadwal pelajaran dengan cara mencari solusi terbaik melalui optimasi \nposisi dan kecepatan partikel dalam suatu populasi. Dalam hal ini, setiap partikel \n9   \n   \nmerepresentasikan solusi jadwal yang potensial, dan proses optimisasi dilakukan \ndengan tujuan meminimalkan pelanggaran terhadap berbagai kendala yang ada, seperti \nwaktu dan ruang kelas yang terbatas[6].",
+            "metadata": {
+                "chunk_id": "chunk_50",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_51",
+            "page_content": "Dalam hal ini, setiap partikel \n9   \n   \nmerepresentasikan solusi jadwal yang potensial, dan proses optimisasi dilakukan \ndengan tujuan meminimalkan pelanggaran terhadap berbagai kendala yang ada, seperti \nwaktu dan ruang kelas yang terbatas[6]. Hasil penelitian menunjukkan bahwa penerapan PSO dapat menghasilkan jadwal yang \nlebih efisien dengan meminimalkan konflik pengajaran dan mengoptimalkan \npenggunaan ruang kelas. Namun, penelitian ini masih terbatas pada penggunaan data \nyang statis dan tidak mengakomodasi perubahan mendadak dalam jadwal, seperti \npembatalan kelas atau perubahan jadwal guru.",
+            "metadata": {
+                "chunk_id": "chunk_51",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_52",
+            "page_content": "Namun, penelitian ini masih terbatas pada penggunaan data \nyang statis dan tidak mengakomodasi perubahan mendadak dalam jadwal, seperti \npembatalan kelas atau perubahan jadwal guru. Penelitian yang dilakukan oleh Siregar, dkk pada tahun 2021 mengembangkan sistem \npenjadwalan petugas ibadah gereja menggunakan algoritma genetika untuk \nmengurangi konflik jadwal dan meningkatkan efisiensi distribusi tugas. Meskipun \npenelitian ini berhasil menunjukkan penerapan algoritma genetika dalam penjadwalan, \nmetode yang digunakan terbatas pada satu jenis algoritma optimasi dan belum \nmenggabungkan berbagai algoritma untuk hasil yang lebih optimal.",
+            "metadata": {
+                "chunk_id": "chunk_52",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_53",
+            "page_content": "Meskipun \npenelitian ini berhasil menunjukkan penerapan algoritma genetika dalam penjadwalan, \nmetode yang digunakan terbatas pada satu jenis algoritma optimasi dan belum \nmenggabungkan berbagai algoritma untuk hasil yang lebih optimal. Penelitian yang \nakan dilakukan oleh penulis bertujuan untuk mengatasi keterbatasan tersebut dengan \nmenggunakan  Hybrid PSO-Genetic Algorithm  yang mengkombinasikan keunggulan \nkedua algoritma dalam eksplorasi dan eksploitasi solusi optimal, serta pendekatan \nWaterfall  untuk",
+            "metadata": {
+                "chunk_id": "chunk_53",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_54",
+            "page_content": "Penelitian yang \nakan dilakukan oleh penulis bertujuan untuk mengatasi keterbatasan tersebut dengan \nmenggunakan  Hybrid PSO-Genetic Algorithm  yang mengkombinasikan keunggulan \nkedua algoritma dalam eksplorasi dan eksploitasi solusi optimal, serta pendekatan \nWaterfall  untuk memberikan kerangka kerja yang lebih sistematis dalam merancang \npenjadwalan petugas ibadah Gereja HKBP Paranginan, yang diharapkan dapat \nmemberikan solusi yang lebih efisien dan fleksibel dibandingkan dengan penelitian \nterdahulu[7]. Penelitian Yumarnis, dkk (2022) menggunakan algoritma genetika untuk menentukan \njadwal kerja karyawan di Kantor PLN ULP Medan Selatan selama pandemi Covid-19.",
+            "metadata": {
+                "chunk_id": "chunk_54",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_55",
+            "page_content": "PLN ULP Medan Selatan selama pandemi Covid-19. Penelitian ini bertujuan mengatasi masalah benturan jadwal yang sering terjadi akibat \nproses manual menggunakan  Microsoft Excel . Algoritma genetika diaplikasikan \ndengan prinsip evolusi biologis untuk menghasilkan jadwal kerja yang optimal melalui \nkombinasi kromosom induk dan pembentukan kromosom baru. Hasil penelitian \nmenunjukkan bahwa aplikasi penjadwalan yang dikembangkan mampu meningkatkan \nefisiensi kinerja karyawan di PLN Medan Selatan.",
+            "metadata": {
+                "chunk_id": "chunk_55",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_56",
+            "page_content": "Hasil penelitian \nmenunjukkan bahwa aplikasi penjadwalan yang dikembangkan mampu meningkatkan \nefisiensi kinerja karyawan di PLN Medan Selatan. Namun, penelitian ini terbatas pada \nsatu jenis metode optimasi dan tidak mengeksplorasi metode lain yang dapat \nmeningkatkan akurasi solusi[8]. 10   \n   \nPenelitian Syahputra, dkk (2023) mengimplementasikan algoritma  Particle Swarm \nOptimization  (PSO) dalam sistem informasi penjadwalan kelas di SMK Panca Budi 1 \nMedan. Penelitian ini bertujuan untuk mengoptimalkan pembagian waktu pelajaran \ndengan memastikan tidak adanya benturan jadwal antara guru yang mengajar di dua \njurusan.",
+            "metadata": {
+                "chunk_id": "chunk_56",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_57",
+            "page_content": "Penelitian ini bertujuan untuk mengoptimalkan pembagian waktu pelajaran \ndengan memastikan tidak adanya benturan jadwal antara guru yang mengajar di dua \njurusan. Metode PSO digunakan untuk menyusun laporan jadwal secara terstruktur \ndan efisien, memberikan kemudahan bagi pengguna dalam membuat laporan jadwal \nkelas. Hasil penelitian ini menunjukkan bahwa algoritma PSO efektif dalam \nmenghasilkan jadwal yang tidak bertabrakan, sehingga mendukung kelancaran proses \npembelajaran di sekolah[9]. Tabel 2.1 Review Literatur \nNo  Penulis [Judul] \n[Tahun] \nPermasalahan  Metode  Hasil \nPenelitian \nPerbedaan \n1.   Krisno & \nKuswanto",
+            "metadata": {
+                "chunk_id": "chunk_57",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_58",
+            "page_content": "[Judul] \n[Tahun] \nPermasalahan  Metode  Hasil \nPenelitian \nPerbedaan \n1.   Krisno & \nKuswanto [Sistem \nInformasi \nPenjadwalan \nKunjungan \nTeknisi \nMenggunakan \nAlgoritma \nGenetika, \n2024] Penjadwalan rute \nteknisi  yang \ndilakukan manual \nmenyebabkan \npemborosan \nwaktu dan biaya. Meningkatkan \nefisiensi waktu, \npenghematan \nbahan  bakar, \ndan \npengurangan \nkesalahan \npenjadwalan. Fokus  pada \noptimasi  rute \nlogistik  teknisi \nmenggunakan TSP, \nsedangkan \npenelitian  Saya \nfokus  pada \npenjadwalan \npetugas  gereja \ndengan  banyak \nkonstrain berbeda.",
+            "metadata": {
+                "chunk_id": "chunk_58",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_59",
+            "page_content": "Fokus  pada \noptimasi  rute \nlogistik  teknisi \nmenggunakan TSP, \nsedangkan \npenelitian  Saya \nfokus  pada \npenjadwalan \npetugas  gereja \ndengan  banyak \nkonstrain berbeda. [Penjadwalan \nMata Pelajaran \nMenggunakan \nPSO, 2023] \nKompleksitas \npenjadwalan mata \npelajaran dengan \nkendala  ruang, \nwaktu,  dan \npreferensi guru. Menghasilkan \njadwal dengan \ntingkat efisiensi \ntinggi  dan \nmeminimalkan \nkonflik. Penelitian  ini \nmenggunakan PSO \nuntuk pendidikan, \nsedangkan \npenelitian  Saya \nmenggabungkan \nPSO dan GA untuk \nmengoptimalkan \njadwal  petugas \ngereja  dengan \npreferensi waktu.",
+            "metadata": {
+                "chunk_id": "chunk_59",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_60",
+            "page_content": "Penelitian  ini \nmenggunakan PSO \nuntuk pendidikan, \nsedangkan \npenelitian  Saya \nmenggabungkan \nPSO dan GA untuk \nmengoptimalkan \njadwal  petugas \ngereja  dengan \npreferensi waktu. [Penerapan \nAlgoritma \nGenetika  dan \nJaringan Syaraf \nTiruan  dalam \nPenjadwalan \nMata  Kuliah, \n2023] Konflik  jadwal \ndan  kebutuhan \nprediksi  jumlah \npeserta kuliah. Algoritma \nGenetika \ndan Jaringan \nSyaraf \nTiruan. Efisiensi dalam \npenjadwalan, \npengurangan \nkonflik,  dan \nprediksi \nkebutuhan mata \nkuliah  lebih \nakurat. Mengintegrasikan \nprediksi \nmenggunakan \nJaringan  Syaraf \nTiruan, sementara \npenelitian  Saya \nberfokus  pada \nhybrid   PSO-GA \nuntuk \nmenyelesaikan \nmasalah optimasi.",
+            "metadata": {
+                "chunk_id": "chunk_60",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_61",
+            "page_content": "Mengintegrasikan \nprediksi \nmenggunakan \nJaringan  Syaraf \nTiruan, sementara \npenelitian  Saya \nberfokus  pada \nhybrid   PSO-GA \nuntuk \nmenyelesaikan \nmasalah optimasi. [ Application of \nParticle Swarm \nOptimization \nAlgorithm  in \nInformation  \nSystems Class \nScheduling , \n2023] Penjadwalan kelas \nmanual \nmenyebabkan \nbenturan  jadwal \nantara guru di dua \njurusan berbeda. Particle \nSwarm \nOptimization  \n(PSO) \nMenghasilkan \njadwal  kelas \nterorganisasi \ntanpa benturan \njadwal  antara \nguru.",
+            "metadata": {
+                "chunk_id": "chunk_61",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_62",
+            "page_content": "Particle \nSwarm \nOptimization  \n(PSO) \nMenghasilkan \njadwal  kelas \nterorganisasi \ntanpa benturan \njadwal  antara \nguru. Menggunakan PSO \nuntuk  optimasi \njadwal  kelas \nberbasis  sekolah, \nsedangkan \npenelitian  Saya \nmengoptimalkan \njadwal  petugas \ngereja  dengan \nbanyak kendala dan \npreferensi waktu. [ The Use \nof  Genetic \nAlgorithm  in \nDetermining \nEmployee \nSchedules  at \nPLN  ULP \nOffice   Selatan , \n2023] \nJadwal  shift \nkaryawan manual \nsering \nmenyebabkan \nbenturan  dan \nkinerja  yang \nkurang optimal. Algoritma \nGenetika \nMeningkatkan \nefisiensi  dan \nakurasi  dalam \npenjadwalan \nshift karyawan.",
+            "metadata": {
+                "chunk_id": "chunk_62",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_63",
+            "page_content": "Algoritma \nGenetika \nMeningkatkan \nefisiensi  dan \nakurasi  dalam \npenjadwalan \nshift karyawan. Menggunakan \nAlgoritma \nGenetika  untuk \npenjadwalan shift \nkaryawan, \nsementara \npenelitian  Saya \nmenggabungkan \nPSO dan GA untuk \njadwal  petugas \ngereja. 2.2 Dasar Teori \nPenjadwalan adalah proses pengaturan sumber daya terbatas, seperti waktu, tenaga \npengajar, dan ruangan, agar dapat digunakan secara efisien untuk mendukung \npelaksanaan kegiatan tertentu, seperti perkuliahan atau kegiatan ibadah.",
+            "metadata": {
+                "chunk_id": "chunk_63",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_64",
+            "page_content": "2.2 Dasar Teori \nPenjadwalan adalah proses pengaturan sumber daya terbatas, seperti waktu, tenaga \npengajar, dan ruangan, agar dapat digunakan secara efisien untuk mendukung \npelaksanaan kegiatan tertentu, seperti perkuliahan atau kegiatan ibadah. Dalam \n12   \n   \nimplementasinya, penjadwalan melibatkan berbagai kendala ( constraints ), seperti \nketersediaan dosen, ruangan, serta slot waktu, sehingga penyusunan secara manual \nsering kali menjadi rumit dan membutuhkan waktu yang lama.",
+            "metadata": {
+                "chunk_id": "chunk_64",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_65",
+            "page_content": "Dalam \n12   \n   \nimplementasinya, penjadwalan melibatkan berbagai kendala ( constraints ), seperti \nketersediaan dosen, ruangan, serta slot waktu, sehingga penyusunan secara manual \nsering kali menjadi rumit dan membutuhkan waktu yang lama. Berbagai penelitian \ntelah menunjukkan bahwa algoritma optimasi, seperti  Genetic Algorithm  (GA), \nParticle Swarm Optimization  (PSO), dan  Ant Colony Optimization  (ACO), dapat \nditerapkan untuk menyelesaikan masalah penjadwalan dengan menghasilkan solusi \nyang optimal. Algoritma-algoritma tersebut dikelompokkan ke dalam metode  heuristic, \nmetaheuristic , dan  hyperheuristic , yang masing-masing memiliki keunggulan dalam \nmeningkatkan efisiensi waktu komputasi serta kualitas hasil penjadwalan.",
+            "metadata": {
+                "chunk_id": "chunk_65",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_66",
+            "page_content": "Algoritma-algoritma tersebut dikelompokkan ke dalam metode  heuristic, \nmetaheuristic , dan  hyperheuristic , yang masing-masing memiliki keunggulan dalam \nmeningkatkan efisiensi waktu komputasi serta kualitas hasil penjadwalan. Dengan \nmemanfaatkan algoritma optimasi, tantangan dalam proses manual dapat diatasi, \nmeskipun faktor seperti ukuran data yang besar dapat memengaruhi durasi proses \nkomputasi. Kajian terhadap metode dan algoritma ini memberikan dasar teori yang \nkuat untuk mengembangkan sistem penjadwalan yang lebih efisien dan efektif di \nberbagai bidang[10].",
+            "metadata": {
+                "chunk_id": "chunk_66",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_67",
+            "page_content": "Kajian terhadap metode dan algoritma ini memberikan dasar teori yang \nkuat untuk mengembangkan sistem penjadwalan yang lebih efisien dan efektif di \nberbagai bidang[10]. Sistem informasi dirancang untuk meningkatkan efisiensi pengelolaan data dan \nmendukung proses pengambilan keputusan, terutama dalam lingkungan organisasi \natau komunitas. Dalam konteks pengelolaan jadwal, teknologi berbasis algoritma \nseperti  Hybrid Particle Swarm Optimization  (PSO) dan  Genetic Algorithm  (GA) dapat \ndigunakan untuk menghasilkan solusi optimal yang memenuhi berbagai kendala dan \nkebutuhan.",
+            "metadata": {
+                "chunk_id": "chunk_67",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_68",
+            "page_content": "Dalam konteks pengelolaan jadwal, teknologi berbasis algoritma \nseperti  Hybrid Particle Swarm Optimization  (PSO) dan  Genetic Algorithm  (GA) dapat \ndigunakan untuk menghasilkan solusi optimal yang memenuhi berbagai kendala dan \nkebutuhan. Pendekatan pengembangan sistem seperti model  Waterfall  memungkinkan \nproses perancangan dilakukan secara terstruktur, mulai dari analisis kebutuhan hingga \nimplementasi dan pemeliharaan[11]. Dengan metode ini, setiap tahap dapat \ndiselesaikan secara sistematis, sehingga menghasilkan sistem yang lebih andal dan \nsesuai dengan kebutuhan pengguna.",
+            "metadata": {
+                "chunk_id": "chunk_68",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_69",
+            "page_content": "Dengan metode ini, setiap tahap dapat \ndiselesaikan secara sistematis, sehingga menghasilkan sistem yang lebih andal dan \nsesuai dengan kebutuhan pengguna. 2.2.1 Penjadwalan \nPenjadwalan, menurut Kenneth R. Baker (2009), adalah suatu proses yang melibatkan \npengalokasian sumber daya yang ada untuk menjalankan sekumpulan tugas dalam \nperiode waktu tertentu yang telah ditetapkan. Proses ini tidak hanya meliputi \npembagian waktu untuk setiap tugas, tetapi juga mencakup perencanaan yang matang, \npemilihan sumber daya yang tepat, serta penentuan waktu yang optimal untuk \npenggunaan sumber daya tersebut[12].",
+            "metadata": {
+                "chunk_id": "chunk_69",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_70",
+            "page_content": "Proses ini tidak hanya meliputi \npembagian waktu untuk setiap tugas, tetapi juga mencakup perencanaan yang matang, \npemilihan sumber daya yang tepat, serta penentuan waktu yang optimal untuk \npenggunaan sumber daya tersebut[12]. Tujuan utama dari penjadwalan adalah untuk \n13   \n   \nmencapai hasil yang diinginkan dalam kerangka waktu yang telah ditentukan, dengan \nmemaksimalkan efisiensi dan efektivitas dalam penggunaan sumber daya yang \ntersedia. Dalam konteks manajerial, penjadwalan sering kali menjadi bagian integral dari \nperencanaan strategis yang lebih luas.",
+            "metadata": {
+                "chunk_id": "chunk_70",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_71",
+            "page_content": "Dalam konteks manajerial, penjadwalan sering kali menjadi bagian integral dari \nperencanaan strategis yang lebih luas. Hal ini memungkinkan organisasi atau individu \nuntuk mengelola waktu, tenaga, dan materi secara lebih terstruktur, sehingga \nmeminimalkan pemborosan dan mengoptimalkan pencapaian tujuan. Penjadwalan \njuga dapat mencakup proses pemantauan dan penyesuaian, mengingat bahwa situasi \ndan prioritas dapat berubah selama periode pelaksanaan[13].",
+            "metadata": {
+                "chunk_id": "chunk_71",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_72",
+            "page_content": "Penjadwalan \njuga dapat mencakup proses pemantauan dan penyesuaian, mengingat bahwa situasi \ndan prioritas dapat berubah selama periode pelaksanaan[13]. Dengan demikian, \npenjadwalan bukan hanya sekadar menentukan kapan suatu tugas harus diselesaikan, \ntetapi juga bagaimana cara terbaik untuk menyelesaikan tugas tersebut dengan sumber \ndaya yang terbatas. 2.2.2  Particle Swarm Optimization Algorithm  \nParticle Swarm Optimization  (PSO) adalah algoritma optimisasi berbasis populasi \nyang terinspirasi oleh perilaku sosial hewan, seperti kawanan burung atau sekolah \nikan[14]. Algoritma ini pertama kali diperkenalkan oleh",
+            "metadata": {
+                "chunk_id": "chunk_72",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_73",
+            "page_content": "Algoritma ini pertama kali diperkenalkan oleh James Kennedy dan Russell \nEberhart pada tahun 1995. PSO bekerja dengan menggerakkan partikel-partikel dalam \nruang pencarian untuk menemukan solusi optimal. Setiap partikel dalam populasi \nmewakili solusi potensial dan memiliki dua atribut utama, yaitu posisi dan kecepatan. Posisi menggambarkan solusi yang mungkin, sementara kecepatan menggambarkan \narah dan langkah yang diambil partikel untuk bergerak menuju solusi yang lebih baik.",
+            "metadata": {
+                "chunk_id": "chunk_73",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_74",
+            "page_content": "Posisi menggambarkan solusi yang mungkin, sementara kecepatan menggambarkan \narah dan langkah yang diambil partikel untuk bergerak menuju solusi yang lebih baik. Kecepatan partikel diperbarui berdasarkan dua komponen utama, yaitu  komponen \npribadi dan komponen sosial. Komponen pribadi mengarah ke posisi terbaik yang \npernah ditemukan oleh partikel itu sendiri, sedangkan komponen sosial mengarah ke \nposisi terbaik yang ditemukan oleh seluruh populasi. Pembaruan kecepatan partikel \ndilakukan dengan rumus: \nv i (t + 1) = w . (pbest i  \u2013 x i (t)) +",
+            "metadata": {
+                "chunk_id": "chunk_74",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_75",
+            "page_content": "(pbest i  \u2013 x i (t)) + r 2  (gbest \u2013 x i (t))  (2.1) \nKeterangan :  \nv i (t)  : kecepatan partikel ke-i pada iterasi t \nw  : faktor inersia yang mengontrol pengaruh kecepatan sebelumnya \n14   \n   \nc 1  dan c 2   : konstanta yang mengontrol pengaruh komponen pribadi dan sosial \nr 1  dan   r 2   : bilangan acak antara 0 dan 1  \npbest i   : posisi terbaik yang ditemukan oleh partikel ke-i \ngbest  : posisi terbaik yang ditemukan oleh seluruh populasi.",
+            "metadata": {
+                "chunk_id": "chunk_75",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_76",
+            "page_content": "1  dan   r 2   : bilangan acak antara 0 dan 1  \npbest i   : posisi terbaik yang ditemukan oleh partikel ke-i \ngbest  : posisi terbaik yang ditemukan oleh seluruh populasi. Setelah kecepatan diperbarui, posisi partikel juga diperbarui dengan rumus: \nx i  ( t + 1) = x i  ( t ) v i  ( t + 1 )   (2.2) Posisi baru ini menggambarkan solusi potensial yang lebih baik. Setiap partikel terus \nmengevaluasi kualitas solusinya dengan menggunakan fungsi objektif yang mengukur \nseberapa baik solusi tersebut. Jika posisi baru memberikan nilai fungsi objektif yang \nlebih baik, maka posisi tersebut akan menjadi posisi terbaik pribadi (pbest) untuk \npartikel tersebut.",
+            "metadata": {
+                "chunk_id": "chunk_76",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_77",
+            "page_content": "Jika posisi baru memberikan nilai fungsi objektif yang \nlebih baik, maka posisi tersebut akan menjadi posisi terbaik pribadi (pbest) untuk \npartikel tersebut. Posisi terbaik global (gbest) diperbarui jika ada partikel yang \nmenemukan posisi yang lebih baik daripada posisi terbaik yang ditemukan oleh \nseluruh populasi[15]. Proses ini diulang selama sejumlah iterasi atau sampai konvergensi tercapai, yaitu \nketika perubahan posisi menjadi sangat kecil atau solusi optimal ditemukan. PSO \nmemiliki keunggulan utama berupa kesederhanaan dan kemampuan untuk melakukan \npencarian solusi secara global, tanpa terjebak pada solusi lokal.",
+            "metadata": {
+                "chunk_id": "chunk_77",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_78",
+            "page_content": "PSO \nmemiliki keunggulan utama berupa kesederhanaan dan kemampuan untuk melakukan \npencarian solusi secara global, tanpa terjebak pada solusi lokal. PSO juga sangat \nefektif dalam menyelesaikan masalah optimisasi yang kompleks, seperti masalah non-\nlinear dan non-convex. Namun, PSO juga memiliki beberapa kekurangan, seperti \nkemungkinan konvergensi prematur ke solusi lokal dan ketergantungan pada \npemilihan parameter yang tepat, seperti faktor inersia dan konstanta sosial.",
+            "metadata": {
+                "chunk_id": "chunk_78",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_79",
+            "page_content": "Namun, PSO juga memiliki beberapa kekurangan, seperti \nkemungkinan konvergensi prematur ke solusi lokal dan ketergantungan pada \npemilihan parameter yang tepat, seperti faktor inersia dan konstanta sosial. PSO telah diterapkan dalam berbagai bidang, termasuk optimisasi fungsi matematis, \ndesain jaringan, pengendalian sistem dinamis, serta dalam pengenalan pola dan \nmachine learning. Dengan kemampuannya untuk mencari solusi dalam ruang \npencarian yang besar, PSO menjadi alat yang sangat berguna dalam menyelesaikan \nmasalah yang sulit dijangkau oleh metode optimisasi tradisional[16].",
+            "metadata": {
+                "chunk_id": "chunk_79",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_80",
+            "page_content": "Dengan kemampuannya untuk mencari solusi dalam ruang \npencarian yang besar, PSO menjadi alat yang sangat berguna dalam menyelesaikan \nmasalah yang sulit dijangkau oleh metode optimisasi tradisional[16]. Meskipun \ndemikian, pemilihan parameter yang tepat dan pengaturan algoritma yang hati-hati \ntetap diperlukan untuk memastikan kinerja PSO yang optimal. 2.2.2  Genetic Algorithm  \nAlgoritma genetika merupakan metode pencarian dan optimasi yang terinspirasi dari \nproses evolusi biologis dan seleksi alam.",
+            "metadata": {
+                "chunk_id": "chunk_80",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_81",
+            "page_content": "2.2.2  Genetic Algorithm  \nAlgoritma genetika merupakan metode pencarian dan optimasi yang terinspirasi dari \nproses evolusi biologis dan seleksi alam. Dikembangkan pertama kali oleh John \n15   \n   \nHolland pada tahun 1975, algoritma ini menerapkan prinsip-prinsip genetika seperti \nseleksi,  crossover  (penyilangan), dan mutasi untuk mencari solusi optimal dari suatu \npermasalahan. Dalam konteks komputasi, algoritma genetika bekerja dengan populasi \nkandidat solusi yang direpresentasikan dalam bentuk kromosom[17].",
+            "metadata": {
+                "chunk_id": "chunk_81",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_82",
+            "page_content": "Dalam konteks komputasi, algoritma genetika bekerja dengan populasi \nkandidat solusi yang direpresentasikan dalam bentuk kromosom[17]. Fundamental dari algoritma genetika terletak pada teori evolusi Darwin, di mana \nindividu yang paling sesuai dengan lingkungannya memiliki probabilitas lebih tinggi \nuntuk bertahan hidup dan menghasilkan keturunan. Dalam implementasi \nkomputasional, setiap kromosom merepresentasikan satu solusi potensial, dan nilai \nfitness function  menentukan seberapa baik solusi tersebut dalam menyelesaikan \npermasalahan yang diberikan[18].",
+            "metadata": {
+                "chunk_id": "chunk_82",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_83",
+            "page_content": "Dalam implementasi \nkomputasional, setiap kromosom merepresentasikan satu solusi potensial, dan nilai \nfitness function  menentukan seberapa baik solusi tersebut dalam menyelesaikan \npermasalahan yang diberikan[18]. Nilai  fitness  =  \n1\n1+\ud835\udc53(\ud835\udc65)   (2.3) \nKeterangan : fx adalah fungsi objek dari problem yang dituntaskan \nAdapun langkah penyelesaian masalah  genetic algorithm  adalah sebagai berikut: \n1. Inisialisasi populasi, inisialisasi populasi merupakan tahap awal dalam algoritma \ngenetika di mana sejumlah kromosom dibangkitkan secara acak sebagai kandidat \nsolusi.",
+            "metadata": {
+                "chunk_id": "chunk_83",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_84",
+            "page_content": "Inisialisasi populasi, inisialisasi populasi merupakan tahap awal dalam algoritma \ngenetika di mana sejumlah kromosom dibangkitkan secara acak sebagai kandidat \nsolusi. Setiap kromosom terdiri dari gen-gen yang merepresentasikan variabel-variabel \npenyelesaian masalah, dengan panjang kromosom dan ukuran populasi ditentukan \nberdasarkan kompleksitas permasalahan yang akan diselesaikan. 2.  Fitness value , merupakan tahap evaluasi setiap kromosom dalam populasi untuk \nmengukur seberapa baik solusi yang dihasilkan.",
+            "metadata": {
+                "chunk_id": "chunk_84",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_85",
+            "page_content": "2.  Fitness value , merupakan tahap evaluasi setiap kromosom dalam populasi untuk \nmengukur seberapa baik solusi yang dihasilkan. Proses ini menggunakan fungsi  fitness  \nyang telah didefinisikan sesuai dengan tujuan optimasi, di mana semakin tinggi nilai \nfitness  suatu kromosom, semakin baik solusi yang direpresentasikannya untuk \nmenyelesaikan permasalahan yang ada. \n3. Seleksi, merupakan proses pemilihan kromosom yang akan menjadi parent untuk \ngenerasi berikutnya berdasarkan nilai fitness masing-masing kromosom.",
+            "metadata": {
+                "chunk_id": "chunk_85",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_86",
+            "page_content": "Seleksi, merupakan proses pemilihan kromosom yang akan menjadi parent untuk \ngenerasi berikutnya berdasarkan nilai fitness masing-masing kromosom. Metode \nseleksi yang umum digunakan adalah  roulette wheel selection , di mana kromosom \ndengan nilai  fitness  lebih tinggi memiliki probabilitas lebih besar untuk terpilih sebagai \nparent dalam proses reproduksi. Pindah silang, atau  crossover  adalah proses mengombinasikan material genetik dari \ndua kromosom parent untuk menghasilkan kromosom  offspring  baru.",
+            "metadata": {
+                "chunk_id": "chunk_86",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_87",
+            "page_content": "Pindah silang, atau  crossover  adalah proses mengombinasikan material genetik dari \ndua kromosom parent untuk menghasilkan kromosom  offspring  baru. Proses ini \ndilakukan dengan probabilitas crossover tertentu dan dapat menggunakan berbagai \n16   \n   \nmetode seperti  single-point crossover ,  multi-point crossover , atau  uniform crossover  \nuntuk menghasilkan variasi genetik dalam populasi. Mutasi, adalah proses mengubah nilai gen secara acak pada kromosom dengan \nprobabilitas yang sangat kecil.",
+            "metadata": {
+                "chunk_id": "chunk_87",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_88",
+            "page_content": "Mutasi, adalah proses mengubah nilai gen secara acak pada kromosom dengan \nprobabilitas yang sangat kecil. Tahap ini penting untuk mempertahankan keragaman \ngenetik dalam populasi dan mencegah konvergensi prematur pada solusi lokal, \nsehingga algoritma dapat terus mengeksplorasi ruang pencarian untuk menemukan \nsolusi yang lebih optimal[19].",
+            "metadata": {
+                "chunk_id": "chunk_88",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_89",
+            "page_content": "3.1 Desain Penelitian \n \nGambar 3.1 Diagram Penelitian \n3.2 Penjabaran Langkah Penelitian \n3.2.1 Identifikasi Masalah  \nDalam proses penelitian ini, identifikasi masalah dilakukan melalui metode \nwawancara langsung dengan pengurus dan petugas ibadah di Gereja HKBP Sabungan \nParanginan. Wawancara ini bertujuan untuk menggali informasi mendalam terkait \ntantangan yang dihadapi dalam penjadwalan petugas ibadah, khususnya dalam \nmemenuhi berbagai kriteria dan kendala operasional.",
+            "metadata": {
+                "chunk_id": "chunk_89",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_90",
+            "page_content": "Wawancara ini bertujuan untuk menggali informasi mendalam terkait \ntantangan yang dihadapi dalam penjadwalan petugas ibadah, khususnya dalam \nmemenuhi berbagai kriteria dan kendala operasional. Melalui interaksi langsung \nMulai  \nIdentifikasi Masalah \nPengumpulan Data \nPerancangan  Algoritma \nSimulasi dan Pengujian  Algoritma  \nHasil \nPengujian \nOptimasi Algoritma Ulang \nAnalisis  \nSelesai \n18   \n   \ndengan para responden, diperoleh data yang kaya tentang proses manual yang \ndigunakan, permasalahan distribusi tugas, konflik jadwal, serta keterbatasan sumber \ndaya.",
+            "metadata": {
+                "chunk_id": "chunk_90",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_91",
+            "page_content": "Melalui interaksi langsung \nMulai  \nIdentifikasi Masalah \nPengumpulan Data \nPerancangan  Algoritma \nSimulasi dan Pengujian  Algoritma  \nHasil \nPengujian \nOptimasi Algoritma Ulang \nAnalisis  \nSelesai \n18   \n   \ndengan para responden, diperoleh data yang kaya tentang proses manual yang \ndigunakan, permasalahan distribusi tugas, konflik jadwal, serta keterbatasan sumber \ndaya. Pendekatan ini memungkinkan peneliti untuk memahami kebutuhan nyata dari \npihak-pihak yang terlibat secara langsung, sehingga dapat merumuskan solusi yang \nrelevan dan sesuai dengan kondisi lapangan. Beberapa masalah utama yang teridentifikasi melibatkan keterbatasan ketersediaan \npetugas dan distribusi beban tugas yang tidak merata.",
+            "metadata": {
+                "chunk_id": "chunk_91",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_92",
+            "page_content": "Beberapa masalah utama yang teridentifikasi melibatkan keterbatasan ketersediaan \npetugas dan distribusi beban tugas yang tidak merata. Tidak semua jemaat dapat \nbertugas di semua peran karena adanya kriteria tertentu, seperti pengkotbah yang \nhanya dapat diisi oleh Pendeta atau Guru Huria, serta pemain musik dan operator yang \nmemerlukan keahlian khusus. Hal ini menyulitkan penyusunan jadwal, terutama ketika \njumlah petugas yang memenuhi syarat terbatas. Selain itu, tidak semua petugas \ntersedia untuk semua sesi (pagi atau siang), sehingga distribusi tugas menjadi lebih \nkompleks.",
+            "metadata": {
+                "chunk_id": "chunk_92",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_93",
+            "page_content": "Selain itu, tidak semua petugas \ntersedia untuk semua sesi (pagi atau siang), sehingga distribusi tugas menjadi lebih \nkompleks. Masalah lain yang ditemukan adalah konflik jadwal antara petugas yang memiliki \nmultiple roles. Misalnya, Sintua yang dapat bertugas sebagai pemimpin doa dan \npenjaga pintu sering menghadapi konflik jika kedua tugas tersebut harus dijalankan di \nwaktu yang bersamaan. Sistem manual sulit untuk melakukan pergantian petugas \nsecara cepat jika ada yang berhalangan hadir.",
+            "metadata": {
+                "chunk_id": "chunk_93",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_94",
+            "page_content": "Sistem manual sulit untuk melakukan pergantian petugas \nsecara cepat jika ada yang berhalangan hadir. Rotasi kelompok singer juga menjadi tantangan besar, karena kelompok koor yang \nsama sering kali bertugas lebih dari sekali dalam satu hari akibat keterbatasan rotasi \nmanual. Hal ini menyebabkan kelelahan pada kelompok tersebut dan kurangnya \nrepresentasi kelompok koor lain. Pengaturan rotasi kelompok koor yang adil menjadi \ntantangan, terutama jika kelompok tertentu memiliki preferensi waktu atau \nketerbatasan jumlah anggota.",
+            "metadata": {
+                "chunk_id": "chunk_94",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_95",
+            "page_content": "Pengaturan rotasi kelompok koor yang adil menjadi \ntantangan, terutama jika kelompok tertentu memiliki preferensi waktu atau \nketerbatasan jumlah anggota. Selain itu, pengaturan durasi dan waktu istirahat petugas juga menjadi masalah. Petugas yang bertugas di sesi pagi memerlukan waktu istirahat yang memadai sebelum \nkembali bertugas di sesi siang, tetapi sistem manual kesulitan memastikan waktu jeda \nyang cukup, terutama saat petugas yang sama bertugas di kedua sesi. Ketidakefisienan \nini dapat mengganggu kualitas pelayanan karena kelelahan petugas.",
+            "metadata": {
+                "chunk_id": "chunk_95",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_96",
+            "page_content": "Ketidakefisienan \nini dapat mengganggu kualitas pelayanan karena kelelahan petugas. Keterbatasan jumlah petugas dalam kategori tertentu, seperti pengkotbah dan pemain \nmusik, menyebabkan tugas-tugas tersebut sering diberikan kepada individu yang sama \n19   \n   \nberulang kali. Untuk peran singer, ada batasan maksimal tiga orang per sesi dengan \nrepresentasi dari kelompok koor yang berbeda, sehingga koordinasi menjadi tantangan \nbesar. 3.2.2 Pengumpulan Data  \nTeknik pengumpulan data yang diterapkan adalah melalui wawancara mendalam \ndengan Pdt.",
+            "metadata": {
+                "chunk_id": "chunk_96",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_97",
+            "page_content": "3.2.2 Pengumpulan Data  \nTeknik pengumpulan data yang diterapkan adalah melalui wawancara mendalam \ndengan Pdt. Simajuntak, seorang pendeta dari gereja HKBP Sabungan Paranginan. Wawancara ini bertujuan untuk menggali informasi mengenai situasi dan kondisi \ngereja, termasuk kebijakan terkait pelayanan serta masalah-masalah yang dihadapi \noleh gereja dalam menjalankan berbagai kegiatan. Wawancara ini dilakukan secara \nlangsung untuk mendapatkan informasi yang lebih mendalam dan akurat dari \nnarasumber yang memiliki pengetahuan dan pengalaman di lapangan.",
+            "metadata": {
+                "chunk_id": "chunk_97",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_98",
+            "page_content": "Wawancara ini dilakukan secara \nlangsung untuk mendapatkan informasi yang lebih mendalam dan akurat dari \nnarasumber yang memiliki pengetahuan dan pengalaman di lapangan. Simajuntak, penulis juga mengumpulkan data terkait \nketersediaan petugas di gereja HKBP Sabungan Paranginan. Data ini diperoleh melalui \nobservasi dan pencatatan terhadap jumlah dan peran petugas yang terlibat dalam \npelayanan gereja, baik dalam kegiatan ibadah, pengelolaan administrasi gereja, \nmaupun kegiatan sosial.",
+            "metadata": {
+                "chunk_id": "chunk_98",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_99",
+            "page_content": "Data ini diperoleh melalui \nobservasi dan pencatatan terhadap jumlah dan peran petugas yang terlibat dalam \npelayanan gereja, baik dalam kegiatan ibadah, pengelolaan administrasi gereja, \nmaupun kegiatan sosial. Data ini sangat penting untuk mengetahui sejauh mana gereja \nmemiliki sumber daya manusia yang memadai untuk menjalankan aktivitasnya dengan \nefisien dan efektif, serta untuk melihat potensi dan tantangan yang ada dalam \npengelolaan gereja. Tabel 3.1 Data Set Ketersediaan Pelayan Gereja \nPdt.",
+            "metadata": {
+                "chunk_id": "chunk_99",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_100",
+            "page_content": "T. Hutabarat Guru Huria St. B. Sitorus Sintua St. R. Silalahi Sintua St J. Manik Sintua St. S. Simbolon Sintua St. H. Sihombing Sintua St. M. Purba Sintua St. N. Napitupulu Sintua St. T. Lumban Gaol Sintua St. P. Nainggolan Sintua 20 St. S. Saragih Sintua St. M. Sitompul Sintua St. D. Marbun Sintua St. H. Pardede Sintua St. L. Nababan Sintua St. J. Sitorus Sintua St. E. Silaban Sintua St. F. Hutapea Sintua St. G. Manurung Sintua St. R. Simanungkalit Sintua St. A. Sinaga Sintua St. Y. Panjaitan",
+            "metadata": {
+                "chunk_id": "chunk_100",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_101",
+            "page_content": "Sintua St. K. Sidabutar Sintua St. U. Pasaribu Sintua St. Z. Hutajulu Sintua St. V. Panggabean Sintua Joice Pianis Yuni Pianis Daniel Terompet David Terompet Jhon Pianis James Terompet Tabel 3.2 Data Set Operator Daftar Sintua yang Bisa Operator St. L. Nababan Sintua St. J. Sitorus Sintua St. E. Silaban Sintua St. F. Hutapea Sintua Selain itu, penulis juga melakukan wawancara dengan beberapa jemaat gereja untuk menggali keluhan dan harapan mereka terhadap pelayanan yang ada di gereja.",
+            "metadata": {
+                "chunk_id": "chunk_101",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_102",
+            "page_content": "Wawancara ini dilakukan secara terbuka dan tanpa paksaan, dengan tujuan untuk 21   \n   \nmendapatkan gambaran yang objektif mengenai persepsi jemaat terhadap pelayanan \ngereja dan faktor-faktor yang mempengaruhi kepuasan mereka. Data yang diperoleh \ndari wawancara ini diharapkan dapat memberikan insight yang berharga dalam upaya \nperbaikan kualitas pelayanan di gereja HKBP Sabungan Paranginan, baik dari sisi \nmanajerial maupun spiritual.",
+            "metadata": {
+                "chunk_id": "chunk_102",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_103",
+            "page_content": "Data yang diperoleh \ndari wawancara ini diharapkan dapat memberikan insight yang berharga dalam upaya \nperbaikan kualitas pelayanan di gereja HKBP Sabungan Paranginan, baik dari sisi \nmanajerial maupun spiritual. Tabel 3.3 Tabel Data Keluhan Hasil Wawancara \nNama  Petugas  Peran  Tanggal  Bertugas  Waktu  Kelompok  Masalah yang \nDihadapi \nPdt. L.  Simanjuntak  Pengkotbah  22 Oktober  2024  Pagi  Pendeta \nHanya satu  pengkotbah tersedia,  bertugas 4 kali  berturut-turut dalam  satu bulan \nSt. A. Sinaga  Pemimpin  Kebaktian \n1 Desember  2024  Pagi  Sintua \nKonflik dengan  jadwal sebagai  pengumpul  persembahan di sesi  yang sama \nJoice  Pemain Musik",
+            "metadata": {
+                "chunk_id": "chunk_103",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_104",
+            "page_content": "L.  Simanjuntak  Pengkotbah  22 Oktober  2024  Pagi  Pendeta \nHanya satu  pengkotbah tersedia,  bertugas 4 kali  berturut-turut dalam  satu bulan \nSt. A. Sinaga  Pemimpin  Kebaktian \n1 Desember  2024  Pagi  Sintua \nKonflik dengan  jadwal sebagai  pengumpul  persembahan di sesi  yang sama \nJoice  Pemain Musik Siang  Pianis \nBertugas di kedua  sesi tanpa jeda waktu  yang memadai \nJakkon  Singer \n15  Desember  2024 \nSiang  Koor Ama  Exaudi \nKoor",
+            "metadata": {
+                "chunk_id": "chunk_104",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_105",
+            "page_content": "Siang  Pianis \nBertugas di kedua  sesi tanpa jeda waktu  yang memadai \nJakkon  Singer \n15  Desember  2024 \nSiang  Koor Ama  Exaudi \nKoor Ama Exaudi  bertugas dua kali di  hari yang sama \nSt. E. Silaban  Pengumpul  Persembahan \n15  Desember  2024 \nPagi  Sintua \nTidak dapat hadir,  sulit mencari  pengganti mendadak \nSt. F. Hutapea   Operator \nMultimedia \n15  Desember  2024 \nPagi  Operator  Multimedia \nTidak mendapat tugas  selama dua bulan  terakhir   \n3.2.3 Perancangan Algoritma \nSebelum melakukan perancangan algoritma, langkah pertama yang dilakukan yaitu \ndengna membuat  constraint   yang akan diterapkan dalam implementasi kode.",
+            "metadata": {
+                "chunk_id": "chunk_105",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_106",
+            "page_content": "Ama Exaudi  bertugas dua kali di  hari yang sama \nSt. E. Silaban  Pengumpul  Persembahan \n15  Desember  2024 \nPagi  Sintua \nTidak dapat hadir,  sulit mencari  pengganti mendadak \nSt. F. Hutapea   Operator \nMultimedia \n15  Desember  2024 \nPagi  Operator  Multimedia \nTidak mendapat tugas  selama dua bulan  terakhir   \n3.2.3 Perancangan Algoritma \nSebelum melakukan perancangan algoritma, langkah pertama yang dilakukan yaitu \ndengna membuat  constraint   yang akan diterapkan dalam implementasi kode. Berikut \nadalah  constraint  terkait penjadwalan :  \n1. Struktur Jadwal Dasar \nSistem menghasilkan jadwal untuk satu bulan penuh, dengan dua kebaktian setiap hari \nMinggu: \n\u2022   Kebaktian Pagi (08:00-10:30) \n\u2022   Kebaktian Siang (11:00-13:30) \n2. Kategori dan Peran Personil \n22   \n   \na. Peran Utama \n1) Kepemimpinan Gereja  \n\u2022   Pendeta \n\u2022   Guru Huria \n\u2022   Sintua \n2) Pendukung Kebaktian  \n\u2022   Pemusik (Pianis dan Pemain Terompet) \n\u2022   Operator \n\u2022   Kelompok Paduan Suara \n3.",
+            "metadata": {
+                "chunk_id": "chunk_106",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_107",
+            "page_content": "Kategori dan Peran Personil \n22   \n   \na. Peran Utama \n1) Kepemimpinan Gereja  \n\u2022   Pendeta \n\u2022   Guru Huria \n\u2022   Sintua \n2) Pendukung Kebaktian  \n\u2022   Pemusik (Pianis dan Pemain Terompet) \n\u2022   Operator \n\u2022   Kelompok Paduan Suara \n3. Posisi yang Dibutuhkan Per Kebaktian \nSetiap kebaktian harus memiliki: \n1)   1 Pengkotbah \n2)   1 Pemimpin Kebaktian \n3)   1 Pianis \n4)   1 Pemain Terompet \n5)   1 Operator \n6)   2 Penjaga Pintu \n7)   3 Kelompok Paduan Suara \n8)   3 Pengumpul Persembahan \n9)   1 Pembaca Warta \n10)   1 Pemimpin Doa \n4.",
+            "metadata": {
+                "chunk_id": "chunk_107",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_108",
+            "page_content": "Posisi yang Dibutuhkan Per Kebaktian \nSetiap kebaktian harus memiliki: \n1)   1 Pengkotbah \n2)   1 Pemimpin Kebaktian \n3)   1 Pianis \n4)   1 Pemain Terompet \n5)   1 Operator \n6)   2 Penjaga Pintu \n7)   3 Kelompok Paduan Suara \n8)   3 Pengumpul Persembahan \n9)   1 Pembaca Warta \n10)   1 Pemimpin Doa \n4. Kebutuhan Petugas Cadangan \nSetiap kebaktian juga harus memiliki petugas cadangan: \n1)   1 Cadangan Pengkotbah \n2)   1 Cadangan Pemimpin Kebaktian \n23   \n   \n3)   1 Cadangan Pianis \n4)   1 Cadangan Pemain Terompet \n5)   1 Cadangan Operator \n6)   2 Cadangan Sintua \n5.",
+            "metadata": {
+                "chunk_id": "chunk_108",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_109",
+            "page_content": "Konstrain Penugasan Personil 1) Kelayakan Peran \u2022 Posisi Pengkotbah hanya dapat diisi oleh Pendeta atau Guru Huria \u2022 Posisi Pemimpin Kebaktian dapat diisi oleh Guru Huria atau Sintua \u2022 Posisi musik harus diisi oleh pemusik yang berkualifikasi (Pianis atau pemain Terompet sesuai peran) \u2022 Posisi operator harus diisi oleh operator yang ditunjuk \u2022 Posisi penjaga pintu, pengumpul persembahan, pembaca warta, dan pemimpin doa harus diisi oleh Sintua 2) Pembatasan Layanan Hari yang Sama \u2022 Orang yang",
+            "metadata": {
+                "chunk_id": "chunk_109",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_110",
+            "page_content": "sama tidak boleh bertugas dalam beberapa peran dalam satu kebaktian \u2022 Orang yang sama tidak boleh bertugas di kebaktian pagi dan siang pada hari yang sama \u2022 Kelompok paduan suara yang sama tidak boleh tampil di kebaktian pagi dan siang 3)",
+            "metadata": {
+                "chunk_id": "chunk_110",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_111",
+            "page_content": "Pembatasan Petugas Cadangan \n\u2022   Petugas cadangan tidak boleh sama dengan petugas utama untuk setiap \nperan \n\u2022   Petugas cadangan harus memiliki kualifikasi peran yang sama dengan \npetugas utama \nBerikut rancangan Algoritma  hybrid PSO-Genetic  \n24   \n   \nStart \n  Initialize Population \nGenerate Random Valid Schedules \nInitialize Personal Best & Global Best \nEnter Main Loop \nEvaluate Fitness \nPSO Update  \nRandom Position Swap with Global Best \nGenetic Mutation",
+            "metadata": {
+                "chunk_id": "chunk_111",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_112",
+            "page_content": "For Each Particle \nRandom Role Reassignment \nUpdate Personal Best \nUpdate Global Best \nMax \nIterations\nReturn Best Schedule \nBetter than Personal Best \nBetter than Global Best \nNO \nCalculate Penalties \nFor: \nSame Person Multiple Roles \nSame Person Both Services \nSame Choir Groups \nInvalid Backup Assignments \nFitness Evaluation \nGambar 3.2  Diagram Rancangan Algoritma  \n25   \n   \n1. Inisialisasi populasi dilakukan melalui metode  _initialize_particle  dalam kelas \nChurchService .",
+            "metadata": {
+                "chunk_id": "chunk_112",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_113",
+            "page_content": "Inisialisasi populasi dilakukan melalui metode  _initialize_particle  dalam kelas \nChurchService . Metode ini membuat jadwal acak untuk sejumlah kebaktian tertentu \n( num_services ). Setiap kebaktian direpresentasikan sebagai sebuah dictionary yang \nberisi peran-peran tertentu (misalnya, pengkotbah, pemimpin kebaktian, pianis, dll.), \nyang diisi secara acak dengan memilih personel yang sesuai dari dictionary \nself.personnel yang sudah ditentukan sebelumnya.",
+            "metadata": {
+                "chunk_id": "chunk_113",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_114",
+            "page_content": "Setiap kebaktian direpresentasikan sebagai sebuah dictionary yang \nberisi peran-peran tertentu (misalnya, pengkotbah, pemimpin kebaktian, pianis, dll.), \nyang diisi secara acak dengan memilih personel yang sesuai dari dictionary \nself.personnel yang sudah ditentukan sebelumnya. Untuk peran yang membutuhkan \nbeberapa orang, seperti penjaga_pintu atau pengumpul_persembahan, digunakan \nfungsi random.sample, sedangkan untuk peran tunggal digunakan random.choice. Selain petugas utama, jadwal juga mencakup petugas cadangan untuk setiap peran \nguna menyediakan alternatif jika diperlukan. Jadwal yang dihasilkan untuk semua \nkebaktian ini kemudian dikembalikan sebagai sebuah daftar, yang merepresentasikan \nsatu \"partikel\" dalam algoritma  Particle Swarm Optimization  (PSO).",
+            "metadata": {
+                "chunk_id": "chunk_114",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_115",
+            "page_content": "Jadwal yang dihasilkan untuk semua \nkebaktian ini kemudian dikembalikan sebagai sebuah daftar, yang merepresentasikan \nsatu \"partikel\" dalam algoritma  Particle Swarm Optimization  (PSO). Proses inisialisasi \nacak ini memastikan keberagaman dalam populasi awal, yang penting untuk \nkeberhasilan proses optimasi. Gambar 3.3 Inisialisasi Populasi \n2. Generate Random Valid Schedules  dilakukan oleh metode _ initialize_particle , yang \nbertujuan untuk membuat jadwal acak yang valid untuk sejumlah kebaktian tertentu \n(num_services) .",
+            "metadata": {
+                "chunk_id": "chunk_115",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_116",
+            "page_content": "Generate Random Valid Schedules  dilakukan oleh metode _ initialize_particle , yang \nbertujuan untuk membuat jadwal acak yang valid untuk sejumlah kebaktian tertentu \n(num_services) . Metode ini memastikan bahwa setiap kebaktian diisi dengan petugas \nutama dan cadangan yang dipilih secara acak dari daftar personel yang relevan di \nself.personnel . Setiap jadwal mencakup peran-peran seperti pengkotbah, pemimpin \nkebaktian, pianis, pemain terompet, operator, penjaga pintu, pengumpul persembahan, \nsinger, pembaca warta, dan pemimpin doa.",
+            "metadata": {
+                "chunk_id": "chunk_116",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_117",
+            "page_content": "Setiap jadwal mencakup peran-peran seperti pengkotbah, pemimpin \nkebaktian, pianis, pemain terompet, operator, penjaga pintu, pengumpul persembahan, \nsinger, pembaca warta, dan pemimpin doa. Untuk memastikan validitas, pemilihan \n26   \n   \npersonel memperhatikan jenis peran (misalnya, hanya pianis untuk peran pianis), dan \nperan yang membutuhkan lebih dari satu orang (seperti penjaga_pintu atau \npengumpul_persembahan) dipilih menggunakan  random.sample . Jadwal ini juga \nmencakup petugas cadangan untuk setiap peran, yang juga dipilih secara acak dari \nkategori personel yang sesuai.",
+            "metadata": {
+                "chunk_id": "chunk_117",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_118",
+            "page_content": "Jadwal ini juga \nmencakup petugas cadangan untuk setiap peran, yang juga dipilih secara acak dari \nkategori personel yang sesuai. Dengan pendekatan ini, metode tersebut menghasilkan \njadwal acak yang cukup beragam, sekaligus memenuhi struktur yang diperlukan untuk \nkebaktian yang valid. Gambar 3.4  Generate Random Valid Schedules \n3. Initialize Personal Best & Global Best  dilakukan pada bagian awal algoritma \nParticle Swarm Optimization (PSO)  di metode  generate_schedule .",
+            "metadata": {
+                "chunk_id": "chunk_118",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_119",
+            "page_content": "Initialize Personal Best & Global Best  dilakukan pada bagian awal algoritma \nParticle Swarm Optimization (PSO)  di metode  generate_schedule . Setelah populasi \nawal (kumpulan partikel) dibuat melalui  _initialize_particle , setiap partikel dianggap \nsebagai solusi potensial untuk masalah penjadwalan. \u2022   Personal Best : Setiap partikel memiliki  personal best , yaitu salinan dari jadwal \nawalnya sendiri. Hal ini disimpan di variabel  personal_best  sebagai \nrepresentasi solusi terbaik yang dicapai oleh partikel tersebut sejauh ini, \nberdasarkan nilai  fitness -nya.",
+            "metadata": {
+                "chunk_id": "chunk_119",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_120",
+            "page_content": "Hal ini disimpan di variabel  personal_best  sebagai \nrepresentasi solusi terbaik yang dicapai oleh partikel tersebut sejauh ini, \nberdasarkan nilai  fitness -nya. \u2022   Global Best : Dari semua partikel dalam populasi, dipilih satu partikel dengan \nnilai  fitness  terbaik (yaitu, dengan penalti terendah). Partikel ini dianggap \nsebagai solusi terbaik secara global, yang disimpan di variabel  global_best . Seleksi dilakukan dengan fungsi min, yang membandingkan setiap partikel \nberdasarkan hasil evaluasi  fitness function .",
+            "metadata": {
+                "chunk_id": "chunk_120",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_121",
+            "page_content": "Seleksi dilakukan dengan fungsi min, yang membandingkan setiap partikel \nberdasarkan hasil evaluasi  fitness function . 27   \n   \nProses inisialisasi ini memastikan bahwa algoritma PSO memiliki acuan awal untuk \nmengevaluasi dan memperbarui solusi, baik di tingkat individu partikel ( personal best ) \nmaupun di tingkat populasi keseluruhan ( global best ). Selanjutnya, global best akan \nmenjadi panduan bagi seluruh partikel selama iterasi untuk mencapai solusi optimal. Gambar 3.5  Initialize Personal Best & Global Best  \n4.",
+            "metadata": {
+                "chunk_id": "chunk_121",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_122",
+            "page_content": "Gambar 3.5  Initialize Personal Best & Global Best  \n4. Enter Main Loop  mengacu pada bagian utama algoritma optimasi PSO-GA  hybrid  \ndi metode  generate_schedule. Pada bagian ini, proses iterasi dimulai untuk \nmemperbaiki solusi yang dihasilkan dari populasi awal. Berikut adalah penjelasan \nlangkah-langkahnya: \n1.   Iterasi ( for loop ): Algoritma dijalankan dalam beberapa iterasi (contoh: 50 \niterasi), yang merepresentasikan proses eksplorasi dan eksploitasi solusi \nselama pencarian jadwal terbaik.",
+            "metadata": {
+                "chunk_id": "chunk_122",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_123",
+            "page_content": "Berikut adalah penjelasan \nlangkah-langkahnya: \n1.   Iterasi ( for loop ): Algoritma dijalankan dalam beberapa iterasi (contoh: 50 \niterasi), yang merepresentasikan proses eksplorasi dan eksploitasi solusi \nselama pencarian jadwal terbaik. 2.   Perbarui Setiap Partikel: Untuk setiap partikel dalam populasi: \no   Dilakukan pembaruan menggunakan metode  _pso_update , di mana \nbeberapa bagian jadwal partikel saat ini disesuaikan dengan  global best  \n(solusi terbaik global). Proses ini mencerminkan mekanisme partikel \n\"bergerak\" menuju solusi terbaik. o   Setelah itu, jadwal yang telah diperbarui akan dimutasi menggunakan \nmetode  _genetic_mutation .",
+            "metadata": {
+                "chunk_id": "chunk_123",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_124",
+            "page_content": "o   Setelah itu, jadwal yang telah diperbarui akan dimutasi menggunakan \nmetode  _genetic_mutation . Mutasi ini bertujuan menambahkan variasi \nacak untuk mencegah algoritma terjebak di solusi lokal. Setelah pembaruan, nilai  fitness  dari partikel yang baru \ndiperbarui dihitung menggunakan metode  _fitness_function . Fitness  diukur \n28   \n   \nberdasarkan penalti yang diberikan untuk pelanggaran aturan (misalnya, \nkonflik jadwal atau pengulangan personel).",
+            "metadata": {
+                "chunk_id": "chunk_124",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_125",
+            "page_content": "Fitness  diukur \n28   \n   \nberdasarkan penalti yang diberikan untuk pelanggaran aturan (misalnya, \nkonflik jadwal atau pengulangan personel). 4.   Perbarui  Personal   Best : Jika nilai  fitness  partikel yang baru diperbarui lebih \nbaik daripada  personal best -nya saat ini, maka  personal best  partikel tersebut \ndigantikan dengan jadwal baru. Perbarui  Global Best : Jika nilai  fitness  partikel yang baru diperbarui lebih baik \ndaripada  global best  (solusi terbaik di seluruh populasi), maka  global best  \ndiperbarui dengan jadwal baru tersebut.",
+            "metadata": {
+                "chunk_id": "chunk_125",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_126",
+            "page_content": "Perbarui  Global Best : Jika nilai  fitness  partikel yang baru diperbarui lebih baik \ndaripada  global best  (solusi terbaik di seluruh populasi), maka  global best  \ndiperbarui dengan jadwal baru tersebut. Loop  Berlanjut: Proses ini diulangi untuk setiap partikel dan setiap iterasi \nhingga seluruh iterasi selesai. Gambar 3.6  Enter Main Loop \n5. Return Best Schedule  adalah tahap akhir dari metode generate_schedule, di mana \nalgoritma menghasilkan jadwal kebaktian terbaik yang telah dioptimalkan. Berikut \nadalah penjelasan prosesnya: \n1.",
+            "metadata": {
+                "chunk_id": "chunk_126",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_127",
+            "page_content": "Berikut \nadalah penjelasan prosesnya: \n1. Mengambil  Global Best : Setelah selesai menjalankan seluruh iterasi di  Main \nLoop,  algoritma memiliki jadwal terbaik secara global yang disimpan dalam \nvariabel  global_best . Jadwal ini dipilih karena memiliki nilai  fitness  terendah, \nyang berarti paling sedikit melanggar aturan atau menghasilkan konflik. 2.   Format Jadwal: Jadwal terbaik ini diformat agar mudah dibaca dan dipahami \noleh pengguna.",
+            "metadata": {
+                "chunk_id": "chunk_127",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_128",
+            "page_content": "2.   Format Jadwal: Jadwal terbaik ini diformat agar mudah dibaca dan dipahami \noleh pengguna. Metode  _format_schedule  digunakan untuk mengonversi \nstruktur data mentah dari  global_best  menjadi jadwal yang rapi, lengkap \n29   \n   \ndengan tanggal, waktu kebaktian (pagi dan sore), serta peran-peran utama dan \ncadangan yang ditugaskan.",
+            "metadata": {
+                "chunk_id": "chunk_128",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_129",
+            "page_content": "Metode  _format_schedule  digunakan untuk mengonversi \nstruktur data mentah dari  global_best  menjadi jadwal yang rapi, lengkap \n29   \n   \ndengan tanggal, waktu kebaktian (pagi dan sore), serta peran-peran utama dan \ncadangan yang ditugaskan. Gambar 3.7  Return Best Schedule \n3.2.4 Simulasi dan Pengujian Algoritma \nSimulasi dan pengujian algoritma ini menggunakan kode Python yang melibatkan \npengelolaan jadwal pelayanan gereja dengan memanfaatkan algoritma optimasi, \nseperti algoritma genetika (GA) dan partikel swarm optimization (PSO). Dalam hal ini, \ndata yang dimasukkan adalah daftar petugas gereja yang bertugas pada berbagai posisi, \nseperti pendeta, guru huria, sintua, musisi, operator, dan kelompok paduan suara.",
+            "metadata": {
+                "chunk_id": "chunk_129",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_130",
+            "page_content": "Dalam hal ini, \ndata yang dimasukkan adalah daftar petugas gereja yang bertugas pada berbagai posisi, \nseperti pendeta, guru huria, sintua, musisi, operator, dan kelompok paduan suara. Setelah kode dijalankan, maka tampilan output sebagai berikut   \n30   \n   \n \nGambar 3.8 Tampilan Output Kode Program \nOutput berupa jadwal mingguan untuk penjadwalan 1 bulan, menampilkan tanggal \nsetiap hari Minggu, waktu ibadah pagi dan sore, serta daftar personel yang bertugas \nuntuk setiap peran, termasuk petugas utama dan cadangan. Peran-peran ini mencakup \npengkotbah, pemimpin kebaktian, musisi, operator, penjaga pintu, penyanyi, \npengumpul persembahan, pembaca warta, dan pemimpin doa.",
+            "metadata": {
+                "chunk_id": "chunk_130",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_131",
+            "page_content": "Peran-peran ini mencakup \npengkotbah, pemimpin kebaktian, musisi, operator, penjaga pintu, penyanyi, \npengumpul persembahan, pembaca warta, dan pemimpin doa. Jadwal dibuat menggunakan algoritma genetika dan  Particle Swarm Optimization \n(PSO) untuk meminimalkan konflik penjadwalan seperti orang yang sama bertugas di \nbeberapa peran sekaligus atau kelompok paduan suara yang sama bertugas di ibadah \npagi dan sore. Output yang dihasilkan merupakan jadwal terbaik yang ditemukan oleh \n31   \n   \nalgoritma, bertujuan untuk memberikan jadwal pelayanan gereja yang terstruktur dan \nmemastikan kelancaran ibadah dengan meminimalkan potensi konflik.",
+            "metadata": {
+                "chunk_id": "chunk_131",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_132",
+            "page_content": "Output yang dihasilkan merupakan jadwal terbaik yang ditemukan oleh \n31   \n   \nalgoritma, bertujuan untuk memberikan jadwal pelayanan gereja yang terstruktur dan \nmemastikan kelancaran ibadah dengan meminimalkan potensi konflik. 3.2.5 Metode Pengujian \nAlgorithm Testing  adalah metode pengujian yang digunakan untuk memastikan bahwa \nalgoritma yang dikembangkan berfungsi sesuai dengan tujuan dan dapat menghasilkan \nsolusi yang benar dan efisien. Dalam konteks penjadwalan petugas ibadah gereja \nmenggunakan  Hybrid PSO-Genetic Algorithm , pengujian algoritma akan dimulai \ndengan pengujian fungsional, yang bertujuan untuk memastikan bahwa algoritma \ndapat menghasilkan jadwal yang sesuai dengan kebutuhan.",
+            "metadata": {
+                "chunk_id": "chunk_132",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_133",
+            "page_content": "Dalam konteks penjadwalan petugas ibadah gereja \nmenggunakan  Hybrid PSO-Genetic Algorithm , pengujian algoritma akan dimulai \ndengan pengujian fungsional, yang bertujuan untuk memastikan bahwa algoritma \ndapat menghasilkan jadwal yang sesuai dengan kebutuhan. Pengujian ini melibatkan \npengujian terhadap berbagai skenario, seperti pengaturan jadwal dengan jumlah \npetugas yang bervariasi, untuk memastikan bahwa algoritma dapat menghasilkan \nsolusi yang tepat dengan memenuhi kriteria yang ditentukan, seperti waktu ibadah, \nkapasitas, dan ketersediaan petugas. Selanjutnya, pengujian kinerja dilakukan untuk menilai efisiensi algoritma dalam hal \nwaktu eksekusi dan penggunaan memori.",
+            "metadata": {
+                "chunk_id": "chunk_133",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_134",
+            "page_content": "Selanjutnya, pengujian kinerja dilakukan untuk menilai efisiensi algoritma dalam hal \nwaktu eksekusi dan penggunaan memori. Pengujian ini sangat penting mengingat \nalgoritma yang digunakan adalah  hybrid  dari PSO dan  Genetic , yang berpotensi \nmemiliki beban komputasi yang lebih tinggi. Pengujian kinerja akan mengukur waktu \nyang dibutuhkan untuk menyelesaikan penjadwalan dengan berbagai ukuran input, \nserta membandingkan efisiensi algoritma dengan pendekatan lain yang lebih \nsederhana.",
+            "metadata": {
+                "chunk_id": "chunk_134",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_135",
+            "page_content": "Pengujian kinerja akan mengukur waktu \nyang dibutuhkan untuk menyelesaikan penjadwalan dengan berbagai ukuran input, \nserta membandingkan efisiensi algoritma dengan pendekatan lain yang lebih \nsederhana. Dengan ini, dapat dinilai apakah algoritma tersebut dapat diterapkan pada \nskenario yang lebih besar atau lebih kompleks tanpa mengorbankan performa. Selain itu, pengujian perbandingan dilakukan untuk membandingkan hasil yang \ndiperoleh dari algoritma hybrid PSO- Genetic  dengan algoritma lain yang mungkin \nrelevan, seperti algoritma PSO atau  Genetic  secara terpisah.",
+            "metadata": {
+                "chunk_id": "chunk_135",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_136",
+            "page_content": "Selain itu, pengujian perbandingan dilakukan untuk membandingkan hasil yang \ndiperoleh dari algoritma hybrid PSO- Genetic  dengan algoritma lain yang mungkin \nrelevan, seperti algoritma PSO atau  Genetic  secara terpisah. Tujuan dari pengujian ini \nadalah untuk melihat apakah penggabungan kedua algoritma tersebut memberikan \npeningkatan performa yang signifikan dibandingkan dengan masing-masing algoritma \nindividu. Dengan melakukan pengujian perbandingan, dapat diperoleh wawasan \nmengenai keunggulan dan kekurangan metode  hybrid  tersebut dalam menghasilkan \nsolusi penjadwalan yang optimal dan efisien dalam konteks penjadwalan petugas \nibadah gereja.",
+            "metadata": {
+                "chunk_id": "chunk_136",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_137",
+            "page_content": "[1]  R. J. Ondang and S. R. Kalangi, \u201cPemanfaatan Media Digital dalam Pelayanan \nGerejawi,\u201d  TELEIOS J. Teol. Agama Kristen , vol. 3, no. 1, pp. [2]  A. U. Azmi, R. Hidayat, and M. Z. Arif, \u201cPerbandingan Algoritma Particle \nSwarm Optimization (Pso) Dan Algoritma Glowworm Swarm Optimization \n(Gso) Dalam Penyelesaian Sistem Persamaan Non Linier,\u201d  Maj. Ilm. Mat. dan \nStat. , vol. 19, no. 1, p. 29, 2019, doi: 10.19184/mims.v19i1.17263.",
+            "metadata": {
+                "chunk_id": "chunk_137",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_138",
+            "page_content": "Mat. dan \nStat. , vol. 19, no. 1, p. 29, 2019, doi: 10.19184/mims.v19i1.17263. [3]  D. A. Suprayogi and W. F. Mahmudy, \u201cPenerapan Algoritma Genetika \nTraveling Salesman Problem with Time Window: Studi Kasus Rute Antar \nJemput Laundry,\u201d  J. Buana Inform. , vol. 6, no. 2, pp. [4]  Y. S. Nugraha, U. Darusalam, and A. Iskandar, \u201cImplementasi Algoritma \nGenetika pada Perancangan Aplikasi Penjadwalan Instalasi Antivirus Berbasis \nWebsite menggunakan Metode Waterfall,\u201d  J. JTIK (Jurnal Teknol. Inf. dan \nKomunikasi) , vol.",
+            "metadata": {
+                "chunk_id": "chunk_138",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_139",
+            "page_content": "Inf. dan \nKomunikasi) , vol. [5]  R. Hartono and A. Zein, \u201cPenerapan Algoritma Genetika Dan Jaringan Syaraf \nTiruan Dalam Penjadwalan Mata Kuliah,\u201d  6 |Jurnal Ilmu Komput. JIK , vol. VI, \nno. 03, pp. [6]  M. Muhardeny, M. H. Irfani, and J. Alie, \u201cPenjadwalan Mata Pelajaran \nMenggunakan Algoritma Particle Swarm Optimization (PSO) Pada SMPIT \nMufidatul Ilmi,\u201d  J. Softw. Intell. , vol. 1, no. 1, pp.",
+            "metadata": {
+                "chunk_id": "chunk_139",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_140",
+            "page_content": "Intell. , vol. 1, no. 1, pp. [7]  H. Kuswanto, P. S. Informatika, F. T. Informasi, J. J. Raya, and K. Makasar, \n\u201cSISTEM INFORMASI PENJADWALAN KUNJUNGAN TEKNISI,\u201d vol. 8, \nno. 4, pp. [8]  N. Yumarnis and S. Dewi Andriana, \u201cthe Use of Genetic Algorithm in \nDetermining Employee Schedules At Pln Ulp Office Selatan,\u201d  Int. Vis. , vol. 2, no. 1, p. 37, 2023. [9]  H. Syahputra, B. Sugito, and Z. Sitorus, \u201cApplication Of Particle Swarm \nOptimization Algorithm In Information Systems Class Scheduling SMK Panca \nBudi 1 Medan,\u201d  Int.",
+            "metadata": {
+                "chunk_id": "chunk_140",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_141",
+            "page_content": "[9]  H. Syahputra, B. Sugito, and Z. Sitorus, \u201cApplication Of Particle Swarm \nOptimization Algorithm In Information Systems Class Scheduling SMK Panca \nBudi 1 Medan,\u201d  Int. Eng. , vol. 2, no. 2, 2023. 33   \n   \n[10] W. A. Puspaningrum, A. Djunaidy, and R. A. Vinarti, \u201cPenjadwalan Mata \nKuliah Menggunakan Algoritma Genetika di Jurusan Sistem Informasi ITS,\u201d  J. \nTek. Pomits , vol. 2, no. 1, pp. [11] T. Handayani, D. H. Fudholi, and S. Rani, \u201cKajian Algoritma Optimasi \nPenjadwalan Mata Kuliah,\u201d  Petir , vol. 13, no. 2, pp. [12] E. Z. Hooker, \u201cField research.,\u201d  SCI Nurs. , vol. 7, no. 3, pp.",
+            "metadata": {
+                "chunk_id": "chunk_141",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_142",
+            "page_content": "[12] E. Z. Hooker, \u201cField research.,\u201d  SCI Nurs. , vol. 7, no. 3, pp. [13] N. I. Lesmana, \u201cPenjadwalan Produksi Untuk Meminimalkan Waktu Produksi \nDengan Menggunakan Metode Branch And Bound,\u201d  J. Tek. Ind. , vol. 17, no. 1, \np. 42, 2017, doi: 10.22219/jtiumm.vol17.no1.42-50. [14] B. Santosa, \u201cBudi Santosa dan Paul Willy,\u201d 2011. [15] I. L. Putra, \u201cImplementasi Algoritma Particle Swarm Optimization(Pso) Dan K-\nNearest Neighbor(K-Nn) Dalam Memprediksi Keberhasilan Anak Smk \nMendapatkan Kerja,\u201d",
+            "metadata": {
+                "chunk_id": "chunk_142",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_143",
+            "page_content": "Dan K-\nNearest Neighbor(K-Nn) Dalam Memprediksi Keberhasilan Anak Smk \nMendapatkan Kerja,\u201d Technol.  J. Ilm. , vol. 13, no. 4, p. 339, 2022, doi: \n10.31602/tji.v13i4.8167. [16] K. F. Irnanda, A. P. Windarto, and I. S. Damanik, \u201cOptimasi Particle Swarm \nOptimization Pada Peningkatan Prediksi dengan Metode Backpropagation \nMenggunakan Software RapidMiner,\u201d  JURIKOM (Jurnal Ris. Komputer) , vol. \n9, no. 1, p. 122, 2022, doi: 10.30865/jurikom.v9i1.3836. [17] T. Alam, S. Qamar, A. Dixit, and M. Benaida, \u201cGenetic algorithm: Reviews, \nimplementations and applications,\u201d  Int.",
+            "metadata": {
+                "chunk_id": "chunk_143",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_144",
+            "page_content": "[17] T. Alam, S. Qamar, A. Dixit, and M. Benaida, \u201cGenetic algorithm: Reviews, \nimplementations and applications,\u201d  Int. Pedagog. , vol. 10, no. 6, pp. 57\u2013\n77, 2021, doi: 10.3991/IJEP.V10I6.14567. [18] W. F. Mahmudy, R. M. Marian, and L. H. S. Luong, \u201cHybrid Genetic \nAlgorithms for Part Type Selection and Machine Loading Problems with \nAlternative Production Plans in Flexible Manufacturing System,\u201d  ECTI Trans. Technol. , vol. 8, no. 1, pp. 80\u201393, 1970, doi: 10.37936/ecti-\ncit.201481.54390.",
+            "metadata": {
+                "chunk_id": "chunk_144",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_145",
+            "page_content": "80\u201393, 1970, doi: 10.37936/ecti-\ncit.201481.54390. [19] R. Christian and D. S. Donoriyanto, \u201cPenerapan Algoritma Genetika Dalam \nPenjadwalan Mata Kuliah Program Studi Teknik Industri Upn \u201dVeteran\u201d Jawa \nTimur,\u201d  Tekmapro  J. Ind. Eng. Manag. , vol. 16, no. 2, pp.",
+            "metadata": {
+                "chunk_id": "chunk_145",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        },
+        {
+            "doc_id": "chunk_146",
+            "page_content": " \nLAMPIRAN 1 Kode Program \nKodeProgram  \n",
+            "metadata": {
+                "chunk_id": "chunk_146",
+                "filename": "TA Metopen.pdf",
+                "source_id": "f5084c72-2562-4582-838c-f93e7051c104",
+                "user_id": 1,
+                "language": "id"
+            }
+        }
+    ],
+    "index_to_docstore_id": {
+        "0": "chunk_0",
+        "1": "chunk_1",
+        "2": "chunk_2",
+        "3": "chunk_3",
+        "4": "chunk_4",
+        "5": "chunk_5",
+        "6": "chunk_6",
+        "7": "chunk_7",
+        "8": "chunk_8",
+        "9": "chunk_9",
+        "10": "chunk_10",
+        "11": "chunk_11",
+        "12": "chunk_12",
+        "13": "chunk_13",
+        "14": "chunk_14",
+        "15": "chunk_15",
+        "16": "chunk_16",
+        "17": "chunk_17",
+        "18": "chunk_18",
+        "19": "chunk_19",
+        "20": "chunk_20",
+        "21": "chunk_21",
+        "22": "chunk_22",
+        "23": "chunk_23",
+        "24": "chunk_24",
+        "25": "chunk_25",
+        "26": "chunk_26",
+        "27": "chunk_27",
+        "28": "chunk_28",
+        "29": "chunk_29",
+        "30": "chunk_30",
+        "31": "chunk_31",
+        "32": "chunk_32",
+        "33": "chunk_33",
+        "34": "chunk_34",
+        "35": "chunk_35",
+        "36": "chunk_36",
+        "37": "chunk_37",
+        "38": "chunk_38",
+        "39": "chunk_39",
+        "40": "chunk_40",
+        "41": "chunk_41",
+        "42": "chunk_42",
+        "43": "chunk_43",
+        "44": "chunk_44",
+        "45": "chunk_45",
+        "46": "chunk_46",
+        "47": "chunk_47",
+        "48": "chunk_48",
+        "49": "chunk_49",
+        "50": "chunk_50",
+        "51": "chunk_51",
+        "52": "chunk_52",
+        "53": "chunk_53",
+        "54": "chunk_54",
+        "55": "chunk_55",
+        "56": "chunk_56",
+        "57": "chunk_57",
+        "58": "chunk_58",
+        "59": "chunk_59",
+        "60": "chunk_60",
+        "61": "chunk_61",
+        "62": "chunk_62",
+        "63": "chunk_63",
+        "64": "chunk_64",
+        "65": "chunk_65",
+        "66": "chunk_66",
+        "67": "chunk_67",
+        "68": "chunk_68",
+        "69": "chunk_69",
+        "70": "chunk_70",
+        "71": "chunk_71",
+        "72": "chunk_72",
+        "73": "chunk_73",
+        "74": "chunk_74",
+        "75": "chunk_75",
+        "76": "chunk_76",
+        "77": "chunk_77",
+        "78": "chunk_78",
+        "79": "chunk_79",
+        "80": "chunk_80",
+        "81": "chunk_81",
+        "82": "chunk_82",
+        "83": "chunk_83",
+        "84": "chunk_84",
+        "85": "chunk_85",
+        "86": "chunk_86",
+        "87": "chunk_87",
+        "88": "chunk_88",
+        "89": "chunk_89",
+        "90": "chunk_90",
+        "91": "chunk_91",
+        "92": "chunk_92",
+        "93": "chunk_93",
+        "94": "chunk_94",
+        "95": "chunk_95",
+        "96": "chunk_96",
+        "97": "chunk_97",
+        "98": "chunk_98",
+        "99": "chunk_99",
+        "100": "chunk_100",
+        "101": "chunk_101",
+        "102": "chunk_102",
+        "103": "chunk_103",
+        "104": "chunk_104",
+        "105": "chunk_105",
+        "106": "chunk_106",
+        "107": "chunk_107",
+        "108": "chunk_108",
+        "109": "chunk_109",
+        "110": "chunk_110",
+        "111": "chunk_111",
+        "112": "chunk_112",
+        "113": "chunk_113",
+        "114": "chunk_114",
+        "115": "chunk_115",
+        "116": "chunk_116",
+        "117": "chunk_117",
+        "118": "chunk_118",
+        "119": "chunk_119",
+        "120": "chunk_120",
+        "121": "chunk_121",
+        "122": "chunk_122",
+        "123": "chunk_123",
+        "124": "chunk_124",
+        "125": "chunk_125",
+        "126": "chunk_126",
+        "127": "chunk_127",
+        "128": "chunk_128",
+        "129": "chunk_129",
+        "130": "chunk_130",
+        "131": "chunk_131",
+        "132": "chunk_132",
+        "133": "chunk_133",
+        "134": "chunk_134",
+        "135": "chunk_135",
+        "136": "chunk_136",
+        "137": "chunk_137",
+        "138": "chunk_138",
+        "139": "chunk_139",
+        "140": "chunk_140",
+        "141": "chunk_141",
+        "142": "chunk_142",
+        "143": "chunk_143",
+        "144": "chunk_144",
+        "145": "chunk_145",
+        "146": "chunk_146"
+    }
+}
