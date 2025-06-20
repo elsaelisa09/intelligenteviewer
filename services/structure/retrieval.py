@@ -1,421 +1,211 @@
-import numpy as np
+# services/vector_store.py
+
+__author__ = "Ari S Negara"
+__copyright__ = "Copyright (C) 2025 Ari S.Negara "
+__version__ = "1.3" # Versi diperbarui dengan fungsi load
+__license__  = "MIT"
+
+import os
+import json
+import shutil
+from pathlib import Path
+import tempfile
+import uuid
 import logging
-from typing import List, Dict, Tuple, Optional, Set
-from dataclasses import dataclass
-from enum import Enum
-import spacy
-from sentence_transformers import SentenceTransformer
-from sklearn.metrics.pairwise import cosine_similarity
-import networkx as nx
-from collections import defaultdict
+import traceback
+from typing import List, Tuple, Optional, Dict
+from datetime import datetime
 
-from ..models.structured_chunk import StructuredChunk
-from .knowledge_graph import DocumentKnowledgeGraph
-from .semantic_types import SemanticTypeDetector, SemanticType
+# Impor library pihak ketiga
+import numpy as np
+from langchain_community.vectorstores import FAISS
+from langchain.schema import Document
+from langchain_huggingface import HuggingFaceEmbeddings
 
-@dataclass
-class RetrievalResult:
-    """Data class for retrieval results."""
-    chunk_id: str
-    text: str
-    score: float
-    semantic_type: SemanticType
-    section_path: List[str]
-    document_id: str
-    metadata: Dict
-    reference_chunks: List[str] = None
-    context_chunks: List[str] = None
+# Impor dari proyek Anda
+from services.models.structured_chunk import StructuredChunk
+from app.storage_config import BASE_STORAGE_DIR
 
-class RetrievalStrategy(Enum):
-    """Enumeration of retrieval strategies."""
-    SEMANTIC = "semantic"
-    GRAPH = "graph"
-    HYBRID = "hybrid"
-    STRUCTURE = "structure"
+# Impor untuk Elasticsearch
+from elasticsearch import Elasticsearch, NotFoundError
+from elasticsearch.helpers import bulk
+from app.config import ELASTICSEARCH_HOST, ELASTICSEARCH_INDEX_NAME
 
-class StructureAwareRetrieval:
+# Konfigurasi logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+# Inisialisasi model embedding
+try:
+    os.environ["TRANSFORMERS_CACHE"] = "./model_cache"
+    embeddings_model = HuggingFaceEmbeddings(
+        model_name="sentence-transformers/all-MiniLM-L6-v2",
+        model_kwargs={'device': 'cpu'},
+        cache_folder="./model_cache"
+    )
+except Exception as e:
+    logger.error(f"Gagal memuat model embedding: {e}")
+    embeddings_model = None
+
+class VectorStoreService:
     """
-    Implements structure-aware retrieval combining semantic search, 
-    knowledge graph traversal, and structural context.
+    Mengelola penyimpanan dan pengambilan chunk dokumen.
+    Mendukung penyimpanan ganda (FAISS + Elasticsearch) dan pemuatan (load).
     """
-    
-    def __init__(self, knowledge_graph: DocumentKnowledgeGraph,
-                 model_name: str = "sentence-transformers/all-MiniLM-L6-v2"):
-        # Initialize components
-        self.knowledge_graph = knowledge_graph
-        self.semantic_detector = SemanticTypeDetector()
-        self.encoder = SentenceTransformer(model_name)
-        self.nlp = spacy.load("en_core_web_sm")
-        
-        # Set up logging
+    def __init__(self):
+        if not embeddings_model:
+            raise RuntimeError("Model embedding tidak berhasil dimuat. VectorStoreService tidak dapat berfungsi.")
+            
+        self.embeddings = embeddings_model
+        self.TEMP_DIR = Path(tempfile.gettempdir()) / "faiss_indices_temp"
+        self.TEMP_DIR.mkdir(exist_ok=True)
         self.logger = logging.getLogger(__name__)
-        self.logger.setLevel(logging.INFO)
         
-        # Retrieval parameters
-        self.params = {
-            'semantic_weight': 0.4,
-            'graph_weight': 0.3,
-            'structure_weight': 0.3,
-            'context_window': 2,
-            'min_score': 0.3
-        }
-        
-        # Cache for embeddings
-        self.embedding_cache = {}
+        # [DIUBAH] Menambahkan cache untuk vector store dan chunk mapping
+        self._vectorstore_cache = {}
+        self._chunk_mapping_cache = {}
 
-    def retrieve_chunks(self, query: str, k: int = 5, 
-                       strategy: RetrievalStrategy = RetrievalStrategy.HYBRID,
-                       filters: Optional[Dict] = None) -> List[RetrievalResult]:
-        """
-        Retrieve relevant chunks using specified strategy.
-        
-        Args:
-            query (str): Query text
-            k (int): Number of chunks to retrieve
-            strategy (RetrievalStrategy): Retrieval strategy to use
-            filters (Optional[Dict]): Filters to apply to results
-            
-        Returns:
-            List[RetrievalResult]: Ranked list of retrieval results
-        """
+        # Inisialisasi Klien Elasticsearch
+        self.es_client = None
+        self.es_index_name = ELASTICSEARCH_INDEX_NAME
         try:
-            self.logger.info(f"Starting retrieval for query: {query[:100]}...")
-            
-            # Detect query type and characteristics
-            query_type = self._analyze_query(query)
-            
-            # Select retrieval method based on strategy and query type
-            if strategy == RetrievalStrategy.SEMANTIC:
-                results = self._semantic_search(query, k * 2)
-            elif strategy == RetrievalStrategy.GRAPH:
-                results = self._graph_based_retrieval(query, k * 2)
-            elif strategy == RetrievalStrategy.STRUCTURE:
-                results = self._structure_based_retrieval(query, k * 2)
-            else:  # HYBRID
-                results = self._hybrid_retrieval(query, k * 2, query_type)
-            
-            # Apply filters if specified
-            if filters:
-                results = self._apply_filters(results, filters)
-            
-            # Add context and post-process
-            final_results = self._post_process_results(results, query_type)
-            
-            # Sort by score and return top k
-            final_results.sort(key=lambda x: x.score, reverse=True)
-            return final_results[:k]
-            
+            logger.info(f"Menghubungkan ke Elasticsearch di: {ELASTICSEARCH_HOST}")
+            self.es_client = Elasticsearch(
+                hosts=[ELASTICSEARCH_HOST], 
+                request_timeout=30,
+                retry_on_timeout=True,
+                max_retries=3
+            )
+            if not self.es_client.ping():
+                raise ConnectionError("Koneksi ke server Elasticsearch gagal.")
+            logger.info("Berhasil terhubung ke Elasticsearch.")
+            self._initialize_elasticsearch_index()
         except Exception as e:
-            self.logger.error(f"Error in chunk retrieval: {str(e)}")
-            raise
+            self.es_client = None
+            logger.error(f"Inisialisasi Elasticsearch gagal: {e}. Fitur pencarian keyword (BM25) akan nonaktif.")
 
-    def _analyze_query(self, query: str) -> Dict:
-        """
-        Analyze query to determine type and characteristics.
-        
-        Args:
-            query (str): Query text
-            
-        Returns:
-            Dict: Query analysis results
-        """
-        # Parse query
-        doc = self.nlp(query)
-        
-        # Detect semantic type
-        semantic_type, confidence = self.semantic_detector.detect_type(query)
-        
-        # Extract key entities and concepts
-        entities = [ent.text for ent in doc.ents]
-        key_phrases = [chunk.text for chunk in doc.noun_chunks]
-        
-        # Analyze query structure
-        query_words = [token.text.lower() for token in doc]
-        is_question = any(word in {'what', 'who', 'when', 'where', 'why', 'how'} 
-                         for word in query_words)
-        
-        return {
-            'semantic_type': semantic_type,
-            'confidence': confidence,
-            'entities': entities,
-            'key_phrases': key_phrases,
-            'is_question': is_question,
-            'length': len(query_words)
-        }
-
-    def _semantic_search(self, query: str, k: int) -> List[RetrievalResult]:
-        """
-        Perform semantic similarity search.
-        
-        Args:
-            query (str): Query text
-            k (int): Number of results to return
-            
-        Returns:
-            List[RetrievalResult]: Search results
-        """
-        # Encode query
-        query_embedding = self.encoder.encode(query)
-        
-        # Get all chunks from knowledge graph
-        chunks = []
-        chunk_embeddings = []
-        
-        for node, data in self.knowledge_graph.graph.nodes(data=True):
-            if data.get('type') == 'chunk':
-                text = data.get('text', '')
-                
-                # Get cached embedding or compute new one
-                if text in self.embedding_cache:
-                    embedding = self.embedding_cache[text]
-                else:
-                    embedding = self.encoder.encode(text)
-                    self.embedding_cache[text] = embedding
-                
-                chunks.append((node, data))
-                chunk_embeddings.append(embedding)
-        
-        if not chunks:
-            return []
-        
-        # Calculate similarities
-        similarities = cosine_similarity(
-            [query_embedding],
-            chunk_embeddings
-        )[0]
-        
-        # Create results
-        results = []
-        for (chunk_id, data), score in zip(chunks, similarities):
-            if score >= self.params['min_score']:
-                result = RetrievalResult(
-                    chunk_id=chunk_id,
-                    text=data.get('text', ''),
-                    score=float(score),
-                    semantic_type=data.get('semantic_type', SemanticType.GENERAL),
-                    section_path=data.get('hierarchical_path', []),
-                    document_id=data.get('document_id', ''),
-                    metadata=data.get('metadata', {})
-                )
-                results.append(result)
-        
-        results.sort(key=lambda x: x.score, reverse=True)
-        return results[:k]
-
-    def _graph_based_retrieval(self, query: str, k: int) -> List[RetrievalResult]:
-        """
-        Perform graph-based retrieval using knowledge graph.
-        
-        Args:
-            query (str): Query text
-            k (int): Number of results to return
-            
-        Returns:
-            List[RetrievalResult]: Retrieved results
-        """
-        # First get some seed chunks using semantic search
-        seed_results = self._semantic_search(query, k // 2)
-        
-        # Expand through graph
-        expanded_chunks = set()
-        for result in seed_results:
-            # Get connected chunks within 2 hops
-            neighbors = nx.single_source_shortest_path_length(
-                self.knowledge_graph.graph,
-                result.chunk_id,
-                cutoff=2
-            )
-            expanded_chunks.update(neighbors.keys())
-        
-        # Score expanded chunks
-        scored_chunks = []
-        for chunk_id in expanded_chunks:
-            node_data = self.knowledge_graph.graph.nodes[chunk_id]
-            if node_data.get('type') != 'chunk':
-                continue
-            
-            # Calculate graph-based score
-            graph_score = self._calculate_graph_score(chunk_id, seed_results)
-            
-            result = RetrievalResult(
-                chunk_id=chunk_id,
-                text=node_data.get('text', ''),
-                score=graph_score,
-                semantic_type=node_data.get('semantic_type', SemanticType.GENERAL),
-                section_path=node_data.get('hierarchical_path', []),
-                document_id=node_data.get('document_id', ''),
-                metadata=node_data.get('metadata', {})
-            )
-            scored_chunks.append(result)
-        
-        scored_chunks.sort(key=lambda x: x.score, reverse=True)
-        return scored_chunks[:k]
-
-    def _structure_based_retrieval(self, query: str, k: int) -> List[RetrievalResult]:
-        """
-        Perform structure-aware retrieval focusing on document hierarchy.
-        
-        Args:
-            query (str): Query text
-            k (int): Number of results to return
-            
-        Returns:
-            List[RetrievalResult]: Retrieved results
-        """
-        # Get initial semantic matches
-        seed_results = self._semantic_search(query, k)
-        
-        # Group by sections
-        section_chunks = defaultdict(list)
-        for result in seed_results:
-            if result.section_path:
-                section_key = tuple(result.section_path)
-                section_chunks[section_key].append(result)
-        
-        # Get additional chunks from relevant sections
-        expanded_results = []
-        for section_path, chunks in section_chunks.items():
-            # Get all chunks from the section
-            section_nodes = [
-                (node, data) for node, data in self.knowledge_graph.graph.nodes(data=True)
-                if (data.get('type') == 'chunk' and 
-                    tuple(data.get('hierarchical_path', [])) == section_path)
-            ]
-            
-            # Score section chunks
-            for node_id, data in section_nodes:
-                # Calculate combined score
-                semantic_score = np.mean([r.score for r in chunks])
-                structure_score = self._calculate_structure_score(
-                    data.get('hierarchical_path', []),
-                    chunks[0].section_path if chunks else []
-                )
-                
-                final_score = (0.7 * semantic_score + 0.3 * structure_score)
-                
-                if final_score >= self.params['min_score']:
-                    result = RetrievalResult(
-                        chunk_id=node_id,
-                        text=data.get('text', ''),
-                        score=final_score,
-                        semantic_type=data.get('semantic_type', SemanticType.GENERAL),
-                        section_path=data.get('hierarchical_path', []),
-                        document_id=data.get('document_id', ''),
-                        metadata=data.get('metadata', {})
-                    )
-                    expanded_results.append(result)
-        
-        expanded_results.sort(key=lambda x: x.score, reverse=True)
-        return expanded_results[:k]
-
-    def _hybrid_retrieval(self, query: str, k: int, 
-                         query_analysis: Dict) -> List[RetrievalResult]:
-        """
-        Perform hybrid retrieval combining multiple strategies.
-        
-        Args:
-            query (str): Query text
-            k (int): Number of results to return
-            query_analysis (Dict): Query analysis results
-            
-        Returns:
-            List[RetrievalResult]: Retrieved results
-        """
-        # Get results from each strategy
-        semantic_results = self._semantic_search(query, k)
-        graph_results = self._graph_based_retrieval(query, k)
-        structure_results = self._structure_based_retrieval(query, k)
-        
-        # Combine results with weights based on query type
-        combined_scores = defaultdict(float)
-        
-        # Adjust weights based on query characteristics
-        weights = self._adjust_weights(query_analysis)
-        
-        # Combine scores
-        for result in semantic_results:
-            combined_scores[result.chunk_id] += weights['semantic'] * result.score
-            
-        for result in graph_results:
-            combined_scores[result.chunk_id] += weights['graph'] * result.score
-            
-        for result in structure_results:
-            combined_scores[result.chunk_id] += weights['structure'] * result.score
-        
-        # Create final results
-        final_results = []
-        for chunk_id, score in combined_scores.items():
-            node_data = self.knowledge_graph.graph.nodes[chunk_id]
-            if node_data.get('type') != 'chunk':
-                continue
-                
-            result = RetrievalResult(
-                chunk_id=chunk_id,
-                text=node_data.get('text', ''),
-                score=score,
-                semantic_type=node_data.get('semantic_type', SemanticType.GENERAL),
-                section_path=node_data.get('hierarchical_path', []),
-                document_id=node_data.get('document_id', ''),
-                metadata=node_data.get('metadata', {})
-            )
-            final_results.append(result)
-        
-        final_results.sort(key=lambda x: x.score, reverse=True)
-        return final_results[:k]
-
-    def _calculate_graph_score(self, chunk_id: str, 
-                             seed_results: List[RetrievalResult]) -> float:
-        """
-        Calculate graph-based relevance score.
-        
-        Args:
-            chunk_id (str): Chunk ID to score
-            seed_results (List[RetrievalResult]): Seed results for context
-            
-        Returns:
-            float: Graph-based score
-        """
-        score = 0.0
-        
-        for seed in seed_results:
+    def _initialize_elasticsearch_index(self):
+        """[BARU] Memeriksa apakah index sudah ada, jika tidak, maka akan dibuat."""
+        if self.es_client and not self.es_client.indices.exists(index=self.es_index_name):
             try:
-                # Calculate shortest path length
-                path_length = nx.shortest_path_length(
-                    self.knowledge_graph.graph,
-                    seed.chunk_id,
-                    chunk_id,
-                    weight='weight'
-                )
-                # Convert path length to score (closer is better)
-                path_score = 1.0 / (1.0 + path_length)
-                score = max(score, path_score * seed.score)
-                
-            except nx.NetworkXNoPath:
-                continue
-        
-        return score
+                self.es_client.indices.create(index=self.es_index_name)
+                logger.info(f"Index Elasticsearch '{self.es_index_name}' berhasil dibuat.")
+            except Exception as e:
+                logger.error(f"Gagal membuat index Elasticsearch '{self.es_index_name}': {e}")
 
-    def _calculate_structure_score(self, path1: List[str], 
-                                 path2: List[str]) -> float:
-        """
-        Calculate structural similarity between hierarchical paths.
-        
-        Args:
-            path1 (List[str]): First hierarchical path
-            path2 (List[str]): Second hierarchical path
+    def add_document(self, chunks: List[StructuredChunk], filename: str, user_id: str, group_id: str, is_temporary: bool = False) -> Tuple[str, Dict]:
+        if not chunks:
+            self.logger.warning(f"Tidak ada chunk yang diberikan untuk file {filename}. Proses penyimpanan dibatalkan.")
+            return None, {}
+
+        session_id = str(uuid.uuid4())
+        self.logger.info(f"Memulai pipeline penyimpanan ganda untuk file: {filename}, session: {session_id}")
+
+        try:
+            documents_for_faiss = []
+            es_actions = []
+            chunk_mapping = {}
+
+            for chunk in chunks:
+                doc = Document(page_content=chunk.text, metadata=chunk.metadata)
+                documents_for_faiss.append(doc)
+                
+                if self.es_client:
+                    es_doc = {
+                        'content': chunk.text, 'filename': filename, 'group_id': group_id,
+                        'chunk_id': chunk.id, 'chunk_index': chunk.chunk_index, 'page_number': chunk.page_number,
+                        'section': chunk.section_title, 'keywords': chunk.keywords, 'topics': chunk.topics
+                    }
+                    action = {"_index": self.es_index_name, "_id": chunk.id, "_source": es_doc}
+                    es_actions.append(action)
+                chunk_mapping[chunk.id] = chunk.metadata
+
+            vectorstore = FAISS.from_documents(documents_for_faiss, self.embeddings)
+            self._save_faiss_store(session_id, vectorstore, filename, group_id, is_temporary)
+
+            if self.es_client and es_actions:
+                try:
+                    success, failed = bulk(self.es_client, es_actions, raise_on_error=True)
+                    logger.info(f"Bulk indexing ke Elasticsearch berhasil: {success} dokumen.")
+                    if failed: logger.error(f"Gagal mengindeks {len(failed)} dokumen: {failed}")
+                except Exception as e:
+                    logger.error(f"Gagal melakukan bulk indexing ke Elasticsearch: {e}", exc_info=True)
             
-        Returns:
-            float: Structural similarity score
+            self._chunk_mapping_cache[session_id] = chunk_mapping
+            self._vectorstore_cache[session_id] = vectorstore # Simpan ke cache setelah dibuat
+            return session_id, chunk_mapping
+
+        except Exception as e:
+            self.logger.error(f"Error besar saat `add_document` untuk {filename}: {str(e)}", exc_info=True)
+            self.cleanup_storage(session_id, filename, group_id)
+            raise
+            
+    def load_vectorstore(self, session_id: str, filename: str, group_id: str) -> Optional[FAISS]:
         """
-        if not path1 or not path2:
-            return 0.0
+        [BARU] Memuat vector store FAISS dari disk.
+        Mencari di cache terlebih dahulu, lalu di direktori permanen, lalu temporer.
+        """
+        if session_id in self._vectorstore_cache:
+            self.logger.debug(f"Mengambil vector store untuk session '{session_id}' dari cache.")
+            return self._vectorstore_cache[session_id]
+
+        # Cek penyimpanan permanen terlebih dahulu
+        perm_path = BASE_STORAGE_DIR / 'vector_stores' / group_id / filename
+        if perm_path.exists():
+            try:
+                self.logger.info(f"Memuat vector store dari penyimpanan permanen: {perm_path}")
+                vs = FAISS.load_local(str(perm_path), self.embeddings, allow_dangerous_deserialization=True)
+                self._vectorstore_cache[session_id] = vs
+                return vs
+            except Exception as e:
+                self.logger.error(f"Gagal memuat vector store permanen dari {perm_path}: {e}")
+                return None
         
-        # Find common prefix length
-        common_length = 0
-        for a, b in zip(path1, path2):
-            if a != b:
-                break
-            common_length += 1
+        # Cek penyimpanan temporer jika tidak ditemukan di permanen
+        temp_path = self.TEMP_DIR / session_id
+        if temp_path.exists():
+            try:
+                self.logger.info(f"Memuat vector store dari penyimpanan temporer: {temp_path}")
+                vs = FAISS.load_local(str(temp_path), self.embeddings, allow_dangerous_deserialization=True)
+                self._vectorstore_cache[session_id] = vs
+                return vs
+            except Exception as e:
+                self.logger.error(f"Gagal memuat vector store temporer dari {temp_path}: {e}")
+                return None
+
+        self.logger.warning(f"Vector store untuk session '{session_id}' atau file '{filename}' tidak ditemukan.")
+        return None
+
+    def cleanup_storage(self, session_id: str, filename: str, group_id: str):
+        self.logger.info(f"Memulai cleanup untuk file '{filename}' (session: {session_id}, group: {group_id})")
         
-        max_length = max(len(path1), len(path2))
-        return
+        self._chunk_mapping_cache.pop(session_id, None)
+        self._vectorstore_cache.pop(session_id, None) # Hapus juga dari cache vectorstore
+
+        perm_dir = BASE_STORAGE_DIR / 'vector_stores' / group_id / filename
+        temp_dir = self.TEMP_DIR / session_id
+        
+        for dir_path in [perm_dir, temp_dir]:
+            if dir_path.exists():
+                try:
+                    shutil.rmtree(dir_path)
+                    self.logger.info(f"Direktori penyimpanan lokal '{dir_path}' berhasil dihapus.")
+                except Exception as e:
+                    self.logger.error(f"Gagal menghapus direktori '{dir_path}': {e}")
+        
+        if self.es_client:
+            try:
+                query = {"query": {"bool": {"must": [{"term": {"group_id.keyword": group_id}}, {"term": {"filename.keyword": filename}}]}}}
+                self.es_client.delete_by_query(index=self.es_index_name, body=query, refresh=True)
+                self.logger.info(f"Berhasil menghapus dokumen dari Elasticsearch untuk '{filename}'.")
+            except Exception as e:
+                self.logger.error(f"Gagal menghapus data dari Elasticsearch untuk '{filename}': {e}", exc_info=True)
+    
+    def _save_faiss_store(self, session_id: str, vectorstore: FAISS, filename: str, group_id: str, is_temporary: bool):
+        save_path = self.TEMP_DIR / session_id if is_temporary else BASE_STORAGE_DIR / 'vector_stores' / group_id / filename
+        try:
+            save_path.mkdir(parents=True, exist_ok=True)
+            vectorstore.save_local(folder_path=str(save_path))
+            self.logger.info(f"Vector store FAISS untuk '{filename}' berhasil disimpan di: {save_path}")
+        except Exception as e:
+            self.logger.error(f"Gagal menyimpan FAISS store di '{save_path}': {e}", exc_info=True)

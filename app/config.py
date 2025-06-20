@@ -9,6 +9,9 @@ from dotenv import load_dotenv
 # Load environment variables
 load_dotenv()
 
+ELASTICSEARCH_HOST = os.getenv("ELASTICSEARCH_HOST", "http://localhost:9200")
+ELASTICSEARCH_INDEX_NAME = os.getenv("ELASTICSEARCH_INDEX_NAME", "document_chunks")
+
 # App configuration
 MAX_DOC_SIZE = 50 * 1024 * 1024  # 50MB
 
